@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="IAS">
+</Property><Property Name="Solution File" Value="F:\Repository\Schneider\SEPM\Software\IAS\IAS.sln">
+</Property><Property Name="Date" Value="Friday, July 04, 2014">
+</Property><Property Name="Time" Value="21:05 PM">
+</Property></Properties><Event ErrorLevel="0" Project="IAS" Source="IAS\IAS.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="IAS" Source="IAS\IAS.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="AndonManager" Source="AndonManager\AndonManager.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="AndonManager" Source="AndonManager\AndonManager.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="GSM_SMS" Source="GSM_SMS\GSM_SMS.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="GSM_SMS" Source="GSM_SMS\GSM_SMS.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="RS485Driver" Source="RS485Driver\RS485Driver.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="RS485Driver" Source="RS485Driver\RS485Driver.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SerialPortDriver" Source="SerialPortDriver\SerialPortDriver.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SerialPortDriver" Source="SerialPortDriver\SerialPortDriver.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="shared" Source="shared\shared.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="shared" Source="shared\shared.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SMSAlerter" Source="SMSAlerter\SMSAlerter.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SMSAlerter" Source="SMSAlerter\SMSAlerter.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="XbeeDriver" Source="Xbee\XbeeDriver.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="XbeeDriver" Source="Xbee\XbeeDriver.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="WareHouseUtility" Source="WareHouseUtility\WareHouseUtility.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="WareHouseUtility" Source="WareHouseUtility\WareHouseUtility.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="client" Source="client\client.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="client" Source="client\client.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SupportGroupUtility" Source="SupportGroupUtility\SupportGroupUtility.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SupportGroupUtility" Source="SupportGroupUtility\SupportGroupUtility.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="IAS.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="IAS.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="IAS" Source="IAS\IAS.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="AndonManager" Source="AndonManager\AndonManager.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="GSM_SMS" Source="GSM_SMS\GSM_SMS.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="RS485Driver" Source="RS485Driver\RS485Driver.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="SerialPortDriver" Source="SerialPortDriver\SerialPortDriver.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="shared" Source="shared\shared.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="SMSAlerter" Source="SMSAlerter\SMSAlerter.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="XbeeDriver" Source="Xbee\XbeeDriver.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="WareHouseUtility" Source="WareHouseUtility\WareHouseUtility.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="client" Source="client\client.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="SupportGroupUtility" Source="SupportGroupUtility\SupportGroupUtility.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

@@ -1,0 +1,219 @@
+I:\IAS_HYD\Software\IAS\client\bin\Debug\ias.client.exe.config
+I:\IAS_HYD\Software\IAS\client\bin\Debug\ias.client.exe
+I:\IAS_HYD\Software\IAS\client\bin\Debug\ias.client.pdb
+I:\IAS_HYD\Software\IAS\client\bin\Debug\ias.shared.dll
+I:\IAS_HYD\Software\IAS\client\bin\Debug\WPFToolkit.dll
+I:\IAS_HYD\Software\IAS\client\bin\Debug\ias.shared.pdb
+I:\IAS_HYD\Software\IAS\client\bin\Debug\WPFToolkit.pdb
+I:\IAS_HYD\Software\IAS\client\obj\Debug\ResolveAssemblyReference.cache
+I:\IAS_HYD\Software\IAS\client\obj\Debug\Window1.baml
+I:\IAS_HYD\Software\IAS\client\obj\Debug\Window1.g.cs
+I:\IAS_HYD\Software\IAS\client\obj\Debug\App.g.cs
+I:\IAS_HYD\Software\IAS\client\obj\Debug\ias.client_MarkupCompile.cache
+I:\IAS_HYD\Software\IAS\client\obj\Debug\ias.client.g.resources
+I:\IAS_HYD\Software\IAS\client\obj\Debug\ias.client.Properties.Resources.resources
+I:\IAS_HYD\Software\IAS\client\obj\Debug\client.csproj.GenerateResource.Cache
+I:\IAS_HYD\Software\IAS\client\obj\Debug\ias.client.exe
+I:\IAS_HYD\Software\IAS\client\obj\Debug\ias.client.pdb
+E:\Projects\IAS_HYD\Software\IAS\client\bin\Debug\ias.client.exe.config
+E:\Projects\IAS_HYD\Software\IAS\client\bin\Debug\ias.client.exe.manifest
+E:\Projects\IAS_HYD\Software\IAS\client\bin\Debug\ias.client.application
+E:\Projects\IAS_HYD\Software\IAS\client\bin\Debug\ias.client.exe
+E:\Projects\IAS_HYD\Software\IAS\client\bin\Debug\ias.client.pdb
+E:\Projects\IAS_HYD\Software\IAS\client\bin\Debug\ias.shared.dll
+E:\Projects\IAS_HYD\Software\IAS\client\bin\Debug\WPFToolkit.dll
+E:\Projects\IAS_HYD\Software\IAS\client\bin\Debug\ias.shared.pdb
+E:\Projects\IAS_HYD\Software\IAS\client\bin\Debug\WPFToolkit.pdb
+E:\Projects\IAS_HYD\Software\IAS\client\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\IAS_HYD\Software\IAS\client\obj\Debug\Window1.baml
+E:\Projects\IAS_HYD\Software\IAS\client\obj\Debug\Window1.g.cs
+E:\Projects\IAS_HYD\Software\IAS\client\obj\Debug\App.g.cs
+E:\Projects\IAS_HYD\Software\IAS\client\obj\Debug\ias.client_MarkupCompile.cache
+E:\Projects\IAS_HYD\Software\IAS\client\obj\Debug\ias.client.g.resources
+E:\Projects\IAS_HYD\Software\IAS\client\obj\Debug\ias.client.Properties.Resources.resources
+E:\Projects\IAS_HYD\Software\IAS\client\obj\Debug\client.csproj.GenerateResource.Cache
+E:\Projects\IAS_HYD\Software\IAS\client\obj\Debug\ias.client.TrustInfo.xml
+E:\Projects\IAS_HYD\Software\IAS\client\obj\Debug\ias.client.exe.manifest
+E:\Projects\IAS_HYD\Software\IAS\client\obj\Debug\ias.client.application
+E:\Projects\IAS_HYD\Software\IAS\client\obj\Debug\ias.client.exe
+E:\Projects\IAS_HYD\Software\IAS\client\obj\Debug\ias.client.pdb
+E:\Projects\Schneider_Bengaluru\Software\IAS\client\bin\Debug\ias.client.exe.config
+E:\Projects\Schneider_Bengaluru\Software\IAS\client\bin\Debug\ias.client.exe.manifest
+E:\Projects\Schneider_Bengaluru\Software\IAS\client\bin\Debug\ias.client.application
+E:\Projects\Schneider_Bengaluru\Software\IAS\client\bin\Debug\ias.client.exe
+E:\Projects\Schneider_Bengaluru\Software\IAS\client\bin\Debug\ias.client.pdb
+E:\Projects\Schneider_Bengaluru\Software\IAS\client\bin\Debug\ias.shared.dll
+E:\Projects\Schneider_Bengaluru\Software\IAS\client\bin\Debug\WPFToolkit.dll
+E:\Projects\Schneider_Bengaluru\Software\IAS\client\bin\Debug\ias.shared.pdb
+E:\Projects\Schneider_Bengaluru\Software\IAS\client\bin\Debug\WPFToolkit.pdb
+E:\Projects\Schneider_Bengaluru\Software\IAS\client\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\Schneider_Bengaluru\Software\IAS\client\obj\Debug\Window1.baml
+E:\Projects\Schneider_Bengaluru\Software\IAS\client\obj\Debug\Window1.g.cs
+E:\Projects\Schneider_Bengaluru\Software\IAS\client\obj\Debug\App.g.cs
+E:\Projects\Schneider_Bengaluru\Software\IAS\client\obj\Debug\ias.client_MarkupCompile.cache
+E:\Projects\Schneider_Bengaluru\Software\IAS\client\obj\Debug\ias.client.g.resources
+E:\Projects\Schneider_Bengaluru\Software\IAS\client\obj\Debug\ias.client.Properties.Resources.resources
+E:\Projects\Schneider_Bengaluru\Software\IAS\client\obj\Debug\client.csproj.GenerateResource.Cache
+E:\Projects\Schneider_Bengaluru\Software\IAS\client\obj\Debug\ias.client.TrustInfo.xml
+E:\Projects\Schneider_Bengaluru\Software\IAS\client\obj\Debug\ias.client.exe.manifest
+E:\Projects\Schneider_Bengaluru\Software\IAS\client\obj\Debug\ias.client.application
+E:\Projects\Schneider_Bengaluru\Software\IAS\client\obj\Debug\ias.client.exe
+E:\Projects\Schneider_Bengaluru\Software\IAS\client\obj\Debug\ias.client.pdb
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\client\bin\Debug\ias.client.exe.config
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\client\bin\Debug\ias.client.exe.manifest
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\client\bin\Debug\ias.client.application
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\client\bin\Debug\ias.client.exe
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\client\bin\Debug\ias.client.pdb
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\client\bin\Debug\ias.shared.dll
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\client\bin\Debug\ias.shared.pdb
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\client\obj\Debug\ResolveAssemblyReference.cache
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\client\obj\Debug\Window1.baml
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\client\obj\Debug\Window1.g.cs
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\client\obj\Debug\App.g.cs
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\client\obj\Debug\ias.client_MarkupCompile.cache
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\client\obj\Debug\ias.client.g.resources
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\client\obj\Debug\ias.client.Properties.Resources.resources
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\client\obj\Debug\client.csproj.GenerateResource.Cache
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\client\obj\Debug\ias.client.TrustInfo.xml
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\client\obj\Debug\ias.client.exe.manifest
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\client\obj\Debug\ias.client.application
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\client\obj\Debug\ias.client.exe
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\client\obj\Debug\ias.client.pdb
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\client\obj\Debug\Monitor.baml
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\client\obj\Debug\Monitor.g.cs
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\client\obj\Debug\Safety.baml
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\client\obj\Debug\Safety.g.cs
+E:\Projects\Schneider_Bengaluru\Software\IAS\client\obj\Debug\Monitor.baml
+E:\Projects\Schneider_Bengaluru\Software\IAS\client\obj\Debug\Safety.baml
+E:\Projects\Schneider_Bengaluru\Software\IAS\client\obj\Debug\Monitor.g.cs
+E:\Projects\Schneider_Bengaluru\Software\IAS\client\obj\Debug\Safety.g.cs
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\client\obj\Debug\PlantAvailability.baml
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\client\obj\Debug\PlantAvailability.g.cs
+E:\Projects\Schneider_Bengaluru\Software\IAS\client\obj\Debug\PlantAvailability.baml
+E:\Projects\Schneider_Bengaluru\Software\IAS\client\obj\Debug\PlantAvailability.g.cs
+E:\Projects\Schneider_Bengaluru\Software\IAS\client\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\Projects\Schneider_Bengaluru\Software\IAS\client\obj\Debug\ias.client_MarkupCompile.lref
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\client\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\client\obj\Debug\ias.client_MarkupCompile.lref
+C:\D Drive 72L\KC\Maintanance\Andon\ANDON SUPPORT EXE\IAS\client\bin\Debug\ias.client.exe.config
+C:\D Drive 72L\KC\Maintanance\Andon\ANDON SUPPORT EXE\IAS\client\bin\Debug\ias.client.exe.manifest
+C:\D Drive 72L\KC\Maintanance\Andon\ANDON SUPPORT EXE\IAS\client\bin\Debug\ias.client.application
+C:\D Drive 72L\KC\Maintanance\Andon\ANDON SUPPORT EXE\IAS\client\bin\Debug\ias.client.exe
+C:\D Drive 72L\KC\Maintanance\Andon\ANDON SUPPORT EXE\IAS\client\bin\Debug\ias.client.pdb
+C:\D Drive 72L\KC\Maintanance\Andon\ANDON SUPPORT EXE\IAS\client\bin\Debug\ias.shared.dll
+C:\D Drive 72L\KC\Maintanance\Andon\ANDON SUPPORT EXE\IAS\client\bin\Debug\ias.shared.pdb
+C:\D Drive 72L\KC\Maintanance\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\ResolveAssemblyReference.cache
+C:\D Drive 72L\KC\Maintanance\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\Monitor.baml
+C:\D Drive 72L\KC\Maintanance\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\Safety.baml
+C:\D Drive 72L\KC\Maintanance\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\Window1.baml
+C:\D Drive 72L\KC\Maintanance\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\Monitor.g.cs
+C:\D Drive 72L\KC\Maintanance\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\PlantAvailability.g.cs
+C:\D Drive 72L\KC\Maintanance\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\Safety.g.cs
+C:\D Drive 72L\KC\Maintanance\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\Window1.g.cs
+C:\D Drive 72L\KC\Maintanance\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\App.g.cs
+C:\D Drive 72L\KC\Maintanance\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\D Drive 72L\KC\Maintanance\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\ias.client_MarkupCompile.cache
+C:\D Drive 72L\KC\Maintanance\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\ias.client_MarkupCompile.lref
+C:\D Drive 72L\KC\Maintanance\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\PlantAvailability.baml
+C:\D Drive 72L\KC\Maintanance\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\ias.client.g.resources
+C:\D Drive 72L\KC\Maintanance\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\ias.client.Properties.Resources.resources
+C:\D Drive 72L\KC\Maintanance\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\client.csproj.GenerateResource.Cache
+C:\D Drive 72L\KC\Maintanance\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\ias.client.TrustInfo.xml
+C:\D Drive 72L\KC\Maintanance\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\ias.client.exe.manifest
+C:\D Drive 72L\KC\Maintanance\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\ias.client.application
+C:\D Drive 72L\KC\Maintanance\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\ias.client.exe
+C:\D Drive 72L\KC\Maintanance\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\ias.client.pdb
+C:\D Drive 72L\KC\Maintanance\Source code\DotNet\Andon\ANDON SUPPORT EXE\IAS\client\bin\Debug\ias.client.exe.config
+C:\D Drive 72L\KC\Maintanance\Source code\DotNet\Andon\ANDON SUPPORT EXE\IAS\client\bin\Debug\ias.client.exe.manifest
+C:\D Drive 72L\KC\Maintanance\Source code\DotNet\Andon\ANDON SUPPORT EXE\IAS\client\bin\Debug\ias.client.application
+C:\D Drive 72L\KC\Maintanance\Source code\DotNet\Andon\ANDON SUPPORT EXE\IAS\client\bin\Debug\ias.client.exe
+C:\D Drive 72L\KC\Maintanance\Source code\DotNet\Andon\ANDON SUPPORT EXE\IAS\client\bin\Debug\ias.client.pdb
+C:\D Drive 72L\KC\Maintanance\Source code\DotNet\Andon\ANDON SUPPORT EXE\IAS\client\bin\Debug\ias.shared.dll
+C:\D Drive 72L\KC\Maintanance\Source code\DotNet\Andon\ANDON SUPPORT EXE\IAS\client\bin\Debug\ias.shared.pdb
+C:\D Drive 72L\KC\Maintanance\Source code\DotNet\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\ResolveAssemblyReference.cache
+C:\D Drive 72L\KC\Maintanance\Source code\DotNet\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\Monitor.baml
+C:\D Drive 72L\KC\Maintanance\Source code\DotNet\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\Safety.baml
+C:\D Drive 72L\KC\Maintanance\Source code\DotNet\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\Window1.baml
+C:\D Drive 72L\KC\Maintanance\Source code\DotNet\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\Monitor.g.cs
+C:\D Drive 72L\KC\Maintanance\Source code\DotNet\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\PlantAvailability.g.cs
+C:\D Drive 72L\KC\Maintanance\Source code\DotNet\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\Safety.g.cs
+C:\D Drive 72L\KC\Maintanance\Source code\DotNet\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\Window1.g.cs
+C:\D Drive 72L\KC\Maintanance\Source code\DotNet\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\App.g.cs
+C:\D Drive 72L\KC\Maintanance\Source code\DotNet\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\D Drive 72L\KC\Maintanance\Source code\DotNet\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\ias.client_MarkupCompile.cache
+C:\D Drive 72L\KC\Maintanance\Source code\DotNet\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\ias.client_MarkupCompile.lref
+C:\D Drive 72L\KC\Maintanance\Source code\DotNet\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\PlantAvailability.baml
+C:\D Drive 72L\KC\Maintanance\Source code\DotNet\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\ias.client.g.resources
+C:\D Drive 72L\KC\Maintanance\Source code\DotNet\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\ias.client.Properties.Resources.resources
+C:\D Drive 72L\KC\Maintanance\Source code\DotNet\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\client.csproj.GenerateResource.Cache
+C:\D Drive 72L\KC\Maintanance\Source code\DotNet\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\ias.client.TrustInfo.xml
+C:\D Drive 72L\KC\Maintanance\Source code\DotNet\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\ias.client.exe.manifest
+C:\D Drive 72L\KC\Maintanance\Source code\DotNet\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\ias.client.application
+C:\D Drive 72L\KC\Maintanance\Source code\DotNet\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\ias.client.exe
+C:\D Drive 72L\KC\Maintanance\Source code\DotNet\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\ias.client.pdb
+C:\D Drive 72L\KC\Maintanance\Source code\DotNet\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\WaterFallChart.baml
+C:\D Drive 72L\KC\Maintanance\Source code\DotNet\Andon\ANDON SUPPORT EXE\IAS\client\obj\Debug\WaterFallChart.g.cs
+C:\Users\andon_krishna\Desktop\andon error\ANDON SUPPORT EXE\IAS\client\bin\Debug\ias.client.exe.config
+C:\Users\andon_krishna\Desktop\andon error\ANDON SUPPORT EXE\IAS\client\bin\Debug\ias.client.exe.manifest
+C:\Users\andon_krishna\Desktop\andon error\ANDON SUPPORT EXE\IAS\client\bin\Debug\ias.client.application
+C:\Users\andon_krishna\Desktop\andon error\ANDON SUPPORT EXE\IAS\client\bin\Debug\ias.client.exe
+C:\Users\andon_krishna\Desktop\andon error\ANDON SUPPORT EXE\IAS\client\bin\Debug\ias.client.pdb
+C:\Users\andon_krishna\Desktop\andon error\ANDON SUPPORT EXE\IAS\client\bin\Debug\ias.shared.dll
+C:\Users\andon_krishna\Desktop\andon error\ANDON SUPPORT EXE\IAS\client\bin\Debug\ias.shared.pdb
+C:\Users\andon_krishna\Desktop\andon error\ANDON SUPPORT EXE\IAS\client\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\andon_krishna\Desktop\andon error\ANDON SUPPORT EXE\IAS\client\obj\Debug\Monitor.baml
+C:\Users\andon_krishna\Desktop\andon error\ANDON SUPPORT EXE\IAS\client\obj\Debug\Safety.baml
+C:\Users\andon_krishna\Desktop\andon error\ANDON SUPPORT EXE\IAS\client\obj\Debug\WaterFallChart.baml
+C:\Users\andon_krishna\Desktop\andon error\ANDON SUPPORT EXE\IAS\client\obj\Debug\Window1.baml
+C:\Users\andon_krishna\Desktop\andon error\ANDON SUPPORT EXE\IAS\client\obj\Debug\Monitor.g.cs
+C:\Users\andon_krishna\Desktop\andon error\ANDON SUPPORT EXE\IAS\client\obj\Debug\PlantAvailability.g.cs
+C:\Users\andon_krishna\Desktop\andon error\ANDON SUPPORT EXE\IAS\client\obj\Debug\Safety.g.cs
+C:\Users\andon_krishna\Desktop\andon error\ANDON SUPPORT EXE\IAS\client\obj\Debug\WaterFallChart.g.cs
+C:\Users\andon_krishna\Desktop\andon error\ANDON SUPPORT EXE\IAS\client\obj\Debug\Window1.g.cs
+C:\Users\andon_krishna\Desktop\andon error\ANDON SUPPORT EXE\IAS\client\obj\Debug\App.g.cs
+C:\Users\andon_krishna\Desktop\andon error\ANDON SUPPORT EXE\IAS\client\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\andon_krishna\Desktop\andon error\ANDON SUPPORT EXE\IAS\client\obj\Debug\ias.client_MarkupCompile.cache
+C:\Users\andon_krishna\Desktop\andon error\ANDON SUPPORT EXE\IAS\client\obj\Debug\ias.client_MarkupCompile.lref
+C:\Users\andon_krishna\Desktop\andon error\ANDON SUPPORT EXE\IAS\client\obj\Debug\PlantAvailability.baml
+C:\Users\andon_krishna\Desktop\andon error\ANDON SUPPORT EXE\IAS\client\obj\Debug\ias.client.g.resources
+C:\Users\andon_krishna\Desktop\andon error\ANDON SUPPORT EXE\IAS\client\obj\Debug\ias.client.Properties.Resources.resources
+C:\Users\andon_krishna\Desktop\andon error\ANDON SUPPORT EXE\IAS\client\obj\Debug\client.csproj.GenerateResource.Cache
+C:\Users\andon_krishna\Desktop\andon error\ANDON SUPPORT EXE\IAS\client\obj\Debug\ias.client.TrustInfo.xml
+C:\Users\andon_krishna\Desktop\andon error\ANDON SUPPORT EXE\IAS\client\obj\Debug\ias.client.exe.manifest
+C:\Users\andon_krishna\Desktop\andon error\ANDON SUPPORT EXE\IAS\client\obj\Debug\ias.client.application
+C:\Users\andon_krishna\Desktop\andon error\ANDON SUPPORT EXE\IAS\client\obj\Debug\ias.client.exe
+C:\Users\andon_krishna\Desktop\andon error\ANDON SUPPORT EXE\IAS\client\obj\Debug\ias.client.pdb
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\client\obj\Debug\WaterFallChart.baml
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\client\obj\Debug\WaterFallChart.g.cs
+F:\Repository\Schneider\SEPM\Software\IAS\client\bin\Debug\ias.client.exe.config
+F:\Repository\Schneider\SEPM\Software\IAS\client\bin\Debug\ias.client.exe.manifest
+F:\Repository\Schneider\SEPM\Software\IAS\client\bin\Debug\ias.client.application
+F:\Repository\Schneider\SEPM\Software\IAS\client\bin\Debug\ias.client.exe
+F:\Repository\Schneider\SEPM\Software\IAS\client\bin\Debug\ias.client.pdb
+F:\Repository\Schneider\SEPM\Software\IAS\client\bin\Debug\ias.shared.dll
+F:\Repository\Schneider\SEPM\Software\IAS\client\bin\Debug\WPFToolkit.dll
+F:\Repository\Schneider\SEPM\Software\IAS\client\bin\Debug\ias.shared.pdb
+F:\Repository\Schneider\SEPM\Software\IAS\client\bin\Debug\WPFToolkit.pdb
+F:\Repository\Schneider\SEPM\Software\IAS\client\obj\Debug\client.csprojResolveAssemblyReference.cache
+F:\Repository\Schneider\SEPM\Software\IAS\client\obj\Debug\Monitor.baml
+F:\Repository\Schneider\SEPM\Software\IAS\client\obj\Debug\Safety.baml
+F:\Repository\Schneider\SEPM\Software\IAS\client\obj\Debug\WaterFallChart.baml
+F:\Repository\Schneider\SEPM\Software\IAS\client\obj\Debug\Window1.baml
+F:\Repository\Schneider\SEPM\Software\IAS\client\obj\Debug\Monitor.g.cs
+F:\Repository\Schneider\SEPM\Software\IAS\client\obj\Debug\PlantAvailability.g.cs
+F:\Repository\Schneider\SEPM\Software\IAS\client\obj\Debug\Safety.g.cs
+F:\Repository\Schneider\SEPM\Software\IAS\client\obj\Debug\WaterFallChart.g.cs
+F:\Repository\Schneider\SEPM\Software\IAS\client\obj\Debug\Window1.g.cs
+F:\Repository\Schneider\SEPM\Software\IAS\client\obj\Debug\App.g.cs
+F:\Repository\Schneider\SEPM\Software\IAS\client\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\Repository\Schneider\SEPM\Software\IAS\client\obj\Debug\ias.client_MarkupCompile.cache
+F:\Repository\Schneider\SEPM\Software\IAS\client\obj\Debug\ias.client_MarkupCompile.lref
+F:\Repository\Schneider\SEPM\Software\IAS\client\obj\Debug\PlantAvailability.baml
+F:\Repository\Schneider\SEPM\Software\IAS\client\obj\Debug\ias.client.g.resources
+F:\Repository\Schneider\SEPM\Software\IAS\client\obj\Debug\ias.client.Properties.Resources.resources
+F:\Repository\Schneider\SEPM\Software\IAS\client\obj\Debug\client.csproj.GenerateResource.Cache
+F:\Repository\Schneider\SEPM\Software\IAS\client\obj\Debug\ias.client.TrustInfo.xml
+F:\Repository\Schneider\SEPM\Software\IAS\client\obj\Debug\ias.client.exe.manifest
+F:\Repository\Schneider\SEPM\Software\IAS\client\obj\Debug\ias.client.application
+F:\Repository\Schneider\SEPM\Software\IAS\client\obj\Debug\ias.client.exe
+F:\Repository\Schneider\SEPM\Software\IAS\client\obj\Debug\ias.client.pdb

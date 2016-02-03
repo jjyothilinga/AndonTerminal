@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta content="en-us" name="WT.seg_1"><link rel="canonical" href="http://msdn.microsoft.com/en-us/library/vstudio/bew39x2a%28v=vs.100%29.aspx">
+        <title>Asynchronous Client Socket Example</title>
+
+
+
+
+<meta name="DCS.dcsuri" content="/en-us/library/bew39x2a(d=default,l=en-us,v=vs.100).aspx">
+
+<meta name="NormalizedUrl" content="http://msdn.microsoft.com/en-us/library/bew39x2a(d=default,l=en-us,v=vs.100).aspx">
+
+<meta name="ms.normalizedurl" content="http://msdn.microsoft.com/en-us/library/bew39x2a(d=default,l=en-us,v=vs.100).aspx">
+
+<meta name="DCSext.ProductFamily" content="LIB_DG">
+
+<meta name="DCSext.Product" content="P_WSUA">
+
+<meta name="DCSext.Title" content="Asynchronous Client Socket Example">
+
+<meta name="VotingContextUrl" content="http://msdn.microsoft.com/en-us/library/bew39x2a(d=default,l=en-us,v=vs.100).aspx">
+
+<meta name="MN" content="4B9B1F2A-11:07:48 PM">
+
+<meta name="Search.ShortId" content="bew39x2a">
+
+<meta name="ms.shortidmsdn" content="bew39x2a">
+
+<meta name="Ms.Locale" content="en-us">
+
+
+
+
+
+
+
+
+        
+    <link rel="stylesheet" type="text/css" href="Asynchronous%20Client%20Socket%20Example_files/Combined.css"><script src="Asynchronous%20Client%20Socket%20Example_files/ms2.js" async="" type="text/javascript"></script><script async="" src="Asynchronous%20Client%20Socket%20Example_files/ai.js" type="text/javascript"></script><script class="mtps-injected">try {
+/**/
+(window.MTPS || (window.MTPS = {})).cdnDomains || (window.MTPS.cdnDomains = { 
+	"image": "http://i.msdn.microsoft.com", 
+	"js": "http://i2.msdn.microsoft.com", 
+	"css": "http://i3.msdn.microsoft.com"
+});
+/**/
+} finally { MTPS._injectNextScript_0 && MTPS._injectNextScript_0(); }</script><script src="Asynchronous%20Client%20Socket%20Example_files/jquery-1.js" class="mtps-injected"></script><script class="mtps-injected">try {
+//
+  var literalNormalizedUrl = '/en-us/library/bew39x2a(d=default,l=en-us,v=vs.100).aspx';
+  var wt_nvr_ru = 'WT_NVR_RU';
+  var wt_fpcdom = '.microsoft.com';
+  var wt_domlist = 'msdn.microsoft.com';
+  var wt_pathlist = '';
+  var wt_paramlist = 'DCSext.mtps_devcenter';
+  var wt_siteid = 'MSDN';
+  var gDomain = 'm.webtrends.com';
+  var gDcsId = 'dcsmgru7m99k7mqmgrhudo0k8_8c6m';
+  var gFpc = 'WT_FPC';
+
+
+
+  if (document.cookie.indexOf(gFpc + "=") == -1) {
+    var wtidJs = document.createElement("script");
+    wtidJs.src = "//" + gDomain + "/" + gDcsId + "/wtid.js";
+    document.getElementsByTagName("head")[0].appendChild(wtidJs);
+  }
+
+
+
+  var detectedLocale = 'en-us';
+  var wtsp = 'msdnlib_dotnet';
+  var gTrackEvents = '0';
+/**/
+} finally { MTPS._injectNextScript_2 && MTPS._injectNextScript_2(); }</script><script class="mtps-injected">try {
+/**/
+  var omni_guid = "7c4fa33a-7072-4350-a507-57151e4e3d49";
+/**/
+} finally { MTPS._injectNextScript_3 && MTPS._injectNextScript_3(); }</script><script class="mtps-injected">try {
+//
+
+            window.appInsightsId = '60854590-027a-4ae4-98be-2741a40f355f';
+            //
+} finally { MTPS._injectNextScript_4 && MTPS._injectNextScript_4(); }</script><script src="Asynchronous%20Client%20Socket%20Example_files/Combined_003.js" class="mtps-injected"></script><script src="Asynchronous%20Client%20Socket%20Example_files/SearchBox.js" class="mtps-injected"></script><script src="Asynchronous%20Client%20Socket%20Example_files/Combined_002.js" class="mtps-injected"></script><script class="mtps-injected">try {
+MTPS = window.MTPS || {}; MTPS.LocalizedStrings = window.MTPS.LocalizedStrings || {}; MTPS.LocalizedStrings.ExpandButtonTooltip = 'Expand'; MTPS.LocalizedStrings.CollapseButtonTooltip = 'Collapse'; MTPS.LocalizedStrings.EnhancedExpandTooltip = 'Click to expand. Double-click to expand all.'; MTPS.LocalizedStrings.EnhancedCollapseTooltip = 'Click to collapse. Double-click to collapse all.'; MTPS.LocalizedStrings.ExpandAllButtonTooltip = 'Expand All'; MTPS.LocalizedStrings.CollapseAllButtonTooltip = 'Collapse All';
+} finally { MTPS._injectNextScript_8 && MTPS._injectNextScript_8(); }</script><script src="Asynchronous%20Client%20Socket%20Example_files/jquery.js" class="mtps-injected"></script><script src="Asynchronous%20Client%20Socket%20Example_files/Combined.js" class="mtps-injected"></script><script src="Asynchronous%20Client%20Socket%20Example_files/broker.js"></script><script class="mtps-injected">try {
+$(document).ready(function() {
+        try {
+            var token = $("#globalRequestVerification input[name='__RequestVerificationToken']").clone();
+            $("#siteFeedbackForm").append(token);
+        } catch(err) {
+            
+        }
+    });
+} finally { MTPS._injectNextScript_11 && MTPS._injectNextScript_11(); }</script><link media="print" type="text/css" rel="stylesheet" href="Asynchronous%20Client%20Socket%20Example_files/PrintView.css"></head>
+    <body class="library">
+        <div class="noL2" id="page">
+            
+            
+  
+            
+        
+    <link type="text/css" rel="stylesheet">
+    
+    <input id="isHeaderBleeding" value="true" type="hidden">
+    <div id="ux-header" dir="ltr" class="ltr msdn">
+        
+
+        <header>
+            <div class="row">
+                <div class="top mobile"></div>
+                <div class="left">
+                    <div class="siteLogo">  
+                        
+<a class="msdnLogoImg" href="http://msdn.microsoft.com/">
+                                <img src="Asynchronous%20Client%20Socket%20Example_files/microsoftLogoForHeader.png">
+                             </a>
+                            
+                                                             
+                        <div data-fragmentname="SiteLogo" id="Fragment_SiteLogo" xmlns="http://www.w3.org/1999/xhtml">
+  <div class="LinkWithImage topImage">
+    <a id="SiteLogo_2152_1" href="http://msdn.microsoft.com/">
+                
+                Developer Network
+            </a>
+  </div>
+</div>    
+                    </div>
+                    <div id="grip"></div>
+                </div>
+                
+                <div class="right desktop">
+                    <div class="auxNav">
+                        <div data-fragmentname="Subscriptions" id="Fragment_Subscriptions" xmlns="http://www.w3.org/1999/xhtml">
+  <a href="https://msdn.microsoft.com/subscriptions/manage/hh442900" id="Subscriptions_2153_1" xmlns="http://www.w3.org/1999/xhtml">MSDN subscriptions</a>
+</div>   
+                        <div data-fragmentname="GetTools" id="Fragment_GetTools" xmlns="http://www.w3.org/1999/xhtml">
+  <a href="http://go.microsoft.com/fwlink/?LinkId=309297&amp;clcid=0x409&amp;slcid=0x409" id="GetTools_2153_3" xmlns="http://www.w3.org/1999/xhtml">Get tools</a>
+</div>   
+                        <div id="signIn">
+
+<a class="scarabLink" href="https://login.live.com/login.srf?wa=wsignin1.0&amp;rpsnv=12&amp;ct=1398146868&amp;rver=6.0.5276.0&amp;wp=MCLBI&amp;wlcxt=MSDN%24MSDN%24MSDN&amp;wreply=http%3a%2f%2fmsdn.microsoft.com%2fen-us%2flibrary%2fbew39x2a%2528v%3dvs.100%2529.aspx&amp;lc=1033&amp;id=254354&amp;mkt=en-US" title="Sign in">Sign in</a></div>
+
+    
+
+                    </div>
+                    <div data-fragmentname="SearchBox" id="Fragment_SearchBox" xmlns="http://www.w3.org/1999/xhtml">
+  <div class="SearchBox">
+    <form id="HeaderSearchForm" name="HeaderSearchForm" method="get" onsubmit="return Epx.Controls.SearchBox.searchBoxOnSubmit(this);">
+      <input autocomplete="off" id="HeaderSearchTextBox" name="query" maxlength="200" onfocus="Epx.Controls.SearchBox.watermarkFocus(event, this.title)" onblur="Epx.Controls.SearchBox.watermarkBlur(event, this.title)" type="text">
+      <button title="Search MSDN" id="HeaderSearchButton" value="" type="submit" class="header-search-button"></button>
+    <div style="display: none; text-align: left; border: 1px solid buttonshadow; position: absolute; z-index: 1000; padding: 2px; background-color: rgb(255, 255, 255); color: rgb(59, 59, 59); font-family: MS Shell Dlg; font-size: 13.3333px;" id="SearchFlyoutContainer"><div id="SuggestionContainer"><ul style="list-style: none outside none; padding: 4px 2px 0px 1px; cursor: pointer; margin: 1px; white-space: nowrap;"></ul></div></div></form>
+    
+    
+  </div>
+</div> 
+                </div>
+            </div>
+       
+            <div class="row" id="droor">
+                <div class="left">
+                            <nav>
+            <ul>
+                     <li class="inactive">
+
+                         <a href="http://msdn.microsoft.com/dn308572" title="Home">Home</a>
+
+                     </li>
+                     <li class="inactive">
+
+                         <a href="http://msdn.microsoft.com/dn614592" title="Technologies">Technologies</a>
+                                 <div class="area">
+                                     <div class="arrow"></div>
+                                 </div>
+                                 <div class="subNav">
+                                     <ul>
+                                                 <li><a href="http://msdn.microsoft.com/dn629512" title="Cloud">Cloud</a></li>
+                                                 <li><a href="http://msdn.microsoft.com/dn629516" title="Mobile">Mobile</a></li>
+                                                 <li><a href="http://msdn.microsoft.com/dn629514" title="Web">Web</a></li>
+                                                 <li><a href="http://msdn.microsoft.com/dn629388" title="Business">Business</a></li>
+                                                 <li><a href="http://msdn.microsoft.com/dn629513" title="Data">Data</a></li>
+                                                 <li><a href="http://msdn.microsoft.com/dn629515" title="Gaming">Gaming</a></li>
+                                     </ul>
+                                 </div>
+
+                     </li>
+                     <li class="inactive">
+
+                         <a href="http://msdn.microsoft.com/dn271880" title="Dev centers">Dev centers</a>
+
+                     </li>
+                     <li class="inactive">
+
+                         <a href="http://msdn.microsoft.com/dn338064" title="Connect">Connect</a>
+                                 <div class="area">
+                                     <div class="arrow"></div>
+                                 </div>
+                                 <div class="subNav">
+                                     <ul>
+                                                 <li><a href="http://tech-advisors.msdn.microsoft.com/en-us" title="Tech Advisors">Tech Advisors</a></li>
+                                                 <li><a href="http://events.msdn.microsoft.com/en-us" title="Events">Events</a></li>
+                                                 <li><a href="http://social.msdn.microsoft.com/forums/" title="Forums">Forums</a></li>
+                                     </ul>
+                                 </div>
+
+                     </li>
+                     <li class="inactive">
+
+                         <a href="http://msdn.microsoft.com/dn292944" title="Downloads">Downloads</a>
+                                 <div class="area">
+                                     <div class="arrow"></div>
+                                 </div>
+                                 <div class="subNav">
+                                     <ul>
+                                                 <li><a href="http://msdn.microsoft.com/dn369242" title="Developer tools">Developer tools</a></li>
+                                                 <li><a href="http://msdn.microsoft.com/dn369240" title="SDKs">SDKs</a></li>
+                                                 <li><a href="https://msdn.microsoft.com/subscriptions/manage/hh442900" title="MSDN subscriptions">MSDN subscriptions</a></li>
+                                     </ul>
+                                 </div>
+
+                     </li>
+                     <li class="active current">
+
+                         <a href="http://msdn.microsoft.com/library" title="Library">Library</a>
+
+                     </li>
+                     <li class="inactive">
+
+                         <a href="http://code.msdn.microsoft.com/" title="Samples">Samples</a>
+
+                     </li>
+            </ul>
+          
+        </nav>        
+       
+                </div>
+                <div class="right mobile"></div>
+                
+                <div data-fragmentname="SocialLinks" id="Fragment_SocialLinks" xmlns="http://www.w3.org/1999/xhtml">
+  
+  <div class="LinkList">
+    <div class="LinkListTitle">Follow us</div>
+    <div class="Links">
+      <ul class="LinkColumn horizontal">
+        <li>
+          <a href="http://www.facebook.com/microsoftdeveloper" target="_blank" id="SocialLinks_2152_4" class="facebook" xmlns="http://www.w3.org/1999/xhtml">http://www.facebook.com/microsoftdeveloper</a>
+        </li>
+        <li>
+          <a href="https://twitter.com/msdev" target="_blank" id="SocialLinks_2152_5" class="twitter" xmlns="http://www.w3.org/1999/xhtml">https://twitter.com/msdev</a>
+        </li>
+        <li>
+          <a href="http://plus.google.com/111221966647232053570/" target="_blank" id="SocialLinks_2152_6" class="googlePlus" xmlns="http://www.w3.org/1999/xhtml">http://plus.google.com/111221966647232053570/</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div> 
+                
+                <span id="singleCol"></span>
+                <span id="doubleCol"></span>
+            </div>
+        </header>
+    </div>
+    
+    
+
+        
+    <div class="printExportMenus ltr">
+        <a style="display: inline;" id="isd_printABook" href="http://msdn.microsoft.com/en-us/library/export/help/?returnUrl=%2fen-us%2flibrary%2fbew39x2a%28v%3dvs.100%29.aspx">
+            Export (<span class="count">0</span>)
+        </a>
+        <a id="isd_print" href="http://msdn.microsoft.com/en-us/library/bew39x2a%28d=printer,v=vs.100%29.aspx" rel="nofollow">
+            Print 
+        </a>
+    </div>
+    
+
+        <div class="printExportMenus ltr">
+        <a id="expandCollapseAll" href="javascript:void(0)">Collapse All</a>
+    </div>
+
+    
+
+        
+            <div id="body">
+                
+
+
+
+
+
+
+
+
+    <div style="width: 280px; max-width: 480px; min-height: 3418px; height: 365px;" id="leftNav">
+
+
+
+<div style="width: 280px; position: fixed; top: 60px;" id="tocnav">
+            <div style="padding-left: 0px;" class="toclevel0" data-toclevel="0">
+<a class="toc_collapsed" href="#"></a><a data-tochassubtree="true" href="http://msdn.microsoft.com/en-us/library/ms123401.aspx" id="ms310241_MSDN.10_en-us" mtpsaliasid="" mtpsassetid="5DDC0A78-6B2C-43E3-9C56-55F45C0DFFA5_MSDN.10_en-us" mtpsshortid="ms123401_MSDN.10_en-us" title="MSDN Library">MSDN Library</a>            </div>
+            <div style="padding-left: 0px;" class="toclevel0" data-toclevel="0">
+<a class="toc_collapsed" href="#"></a><a data-tochassubtree="true" href="http://msdn.microsoft.com/en-us/library/ff361664%28v=vs.110%29.aspx" id="aa139615_MSDN.10_en-us" mtpsaliasid="" mtpsassetid="43e22490-fb00-409c-8301-585a03034ae2_MSDN.10_en-us" mtpsshortid="ff361664_VS.110_en-us" title=".NET Development">.NET Development</a>            </div>
+            <div style="padding-left: 0px;" class="toclevel0" data-toclevel="0">
+<a class="toc_collapsed" href="#"></a><a data-tochassubtree="true" href="http://msdn.microsoft.com/en-us/library/w0x726c2%28v=vs.100%29.aspx" id="dd429910_VS.100_en-us" mtpsaliasid="" mtpsassetid="f61f02f2-2f20-483d-8f56-a9c8f3a54986_VS.100_en-us" mtpsshortid="w0x726c2_VS.100_en-us" title=".NET Framework 4">.NET Framework 4</a>            </div>
+            <div style="padding-left: 0px;" class="toclevel0" data-toclevel="0">
+<a class="toc_collapsed" href="#"></a><a data-tochassubtree="true" href="http://msdn.microsoft.com/en-us/library/29eafad8%28v=vs.100%29.aspx" id="dd429986_VS.100_en-us" mtpsaliasid="" mtpsassetid="faae8083-fecb-4514-b133-b0a5a32a7c3c_VS.100_en-us" mtpsshortid="29eafad8_VS.100_en-us" title=".NET Framework Advanced Development">.NET Framework Advanced Development</a>            </div>
+            <div style="padding-left: 0px;" class="toclevel0" data-toclevel="0">
+<a class="toc_collapsed" href="#"></a><a data-tochassubtree="true" href="http://msdn.microsoft.com/en-us/library/4as0wz7t%28v=vs.100%29.aspx" id="cc704137_VS.100_en-us" mtpsaliasid="" mtpsassetid="8d455610-67a0-4fa8-a62f-7747064a9256_VS.100_en-us" mtpsshortid="4as0wz7t_VS.100_en-us" title="Network Programming">Network Programming</a>            </div>
+            <div style="padding-left: 0px;" class="toclevel0" data-toclevel="0">
+<a class="toc_collapsed" href="#"></a><a data-tochassubtree="true" href="http://msdn.microsoft.com/en-us/library/d3s1ybx2%28v=vs.100%29.aspx" id="cc704140_VS.100_en-us" mtpsaliasid="" mtpsassetid="3aab4bcc-8397-4e1a-a1b6-bbd837a21430_VS.100_en-us" mtpsshortid="d3s1ybx2_VS.100_en-us" title="Using Application Protocols">Using Application Protocols</a>            </div>
+            <div style="padding-left: 0px;" class="toclevel0" data-toclevel="0">
+<a class="toc_collapsed" href="#"></a><a data-tochassubtree="true" href="http://msdn.microsoft.com/en-us/library/b6xa24z5%28v=vs.100%29.aspx" id="cc704144_VS.100_en-us" mtpsaliasid="" mtpsassetid="10d22735-bd37-42c1-a2be-c1932f979a7d_VS.100_en-us" mtpsshortid="b6xa24z5_VS.100_en-us" title="Sockets">Sockets</a>            </div>
+            <div data-childrenloaded="true" style="padding-left: 17px;" class="toclevel1" data-toclevel="1">
+<a class="toc_expanded" href="#"></a><a data-tochassubtree="true" href="http://msdn.microsoft.com/en-us/library/w89fhyex%28v=vs.100%29.aspx" id="cc704147_VS.100_en-us" mtpsaliasid="" mtpsassetid="f3fc7533-6956-42c6-bbc3-73e5a221027d_VS.100_en-us" mtpsshortid="w89fhyex_VS.100_en-us" title="Socket Code Examples">Socket Code Examples</a>            </div>
+            <div style="padding-left: 34px;" class="toclevel2" data-toclevel="2">
+<span class="toc_empty"></span><a href="http://msdn.microsoft.com/en-us/library/kb5kfec7%28v=vs.100%29.aspx" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="Synchronous Client Socket Example">Synchronous Client Socket Example</a>            </div>
+            <div style="padding-left: 34px;" class="toclevel2" data-toclevel="2">
+<span class="toc_empty"></span><a href="http://msdn.microsoft.com/en-us/library/6y0e13d3%28v=vs.100%29.aspx" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="Synchronous Server Socket Example">Synchronous Server Socket Example</a>            </div>
+            <div style="padding-left: 34px;" class="toclevel2 current" data-toclevel="2">
+<span class="toc_empty"></span><a href="http://msdn.microsoft.com/en-us/library/bew39x2a%28v=vs.100%29.aspx" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="Asynchronous Client Socket Example">Asynchronous Client Socket Example</a>            </div>
+            <div style="padding-left: 34px;" class="toclevel2" data-toclevel="2">
+<span class="toc_empty"></span><a href="http://msdn.microsoft.com/en-us/library/fx6588te%28v=vs.100%29.aspx" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="Asynchronous Server Socket Example">Asynchronous Server Socket Example</a>            </div>
+</div>
+        
+
+        
+
+        
+        
+        <div id="toc-resizable-ew" class="toc-resizable-ew"></div>
+        
+
+<a style="left: 280px; display: inline-block;" id="NavigationResize" href="javascript:void(0)">
+    <img style="" class="cl_nav_resize_open" src="Asynchronous%20Client%20Socket%20Example_files/ImageSprite.png" title="Expand" alt="Expand">
+    <img style="display: none;" class="cl_nav_resize_close" src="Asynchronous%20Client%20Socket%20Example_files/ImageSprite.png" title="Minimize" alt="Minimize">
+</a>
+
+
+
+    </div>
+<div style="margin-left: 280px; width: auto;" id="content" class="content">
+
+
+
+
+
+
+
+    
+    
+
+    
+
+    
+
+
+        
+
+<div class="topic" xmlns="http://www.w3.org/1999/xhtml">
+  <h1 class="title">Asynchronous Client Socket Example</h1>
+  
+  <div class="lw_vs">
+    <div id="curversion">
+      <strong>
+            .NET Framework 4
+        </strong>
+    </div>
+    <div id="versionclick">
+      <div id="vsseperator" class="cl_lw_vs_seperator"></div>
+      <div>
+        <div>
+          <a id="vsLink" href="javascript:;">
+                        Other Versions
+                    </a>
+        </div>
+        <div class="cl_vs_arrow clip10x10">
+          <img class="cl_lw_vs_arrow" id="vsArrow" alt="" src="Asynchronous%20Client%20Socket%20Example_files/ImageSprite.png">
+        </div>
+      </div>
+      <ul style="display: none;" id="vsPanel">
+        <li>
+          <a href="http://msdn.microsoft.com/en-us/library/bew39x2a%28v=vs.110%29.aspx" title="">.NET Framework 4.5</a>
+        </li>
+        <li>
+          <a href="http://msdn.microsoft.com/en-us/library/bew39x2a%28v=vs.85%29.aspx" title="">.NET Framework 3.0</a>
+        </li>
+        <li>
+          <a href="http://msdn.microsoft.com/en-us/library/bew39x2a%28v=vs.71%29.aspx" title="">.NET Framework 1.1</a>
+        </li>
+        <li>
+          <a href="http://msdn.microsoft.com/en-us/library/bew39x2a%28v=vs.90%29.aspx" title="">.NET Framework 3.5</a>
+        </li>
+        <li>
+          <a href="http://msdn.microsoft.com/en-us/library/bew39x2a%28v=vs.80%29.aspx" title="">.NET Framework 2.0</a>
+        </li>
+      </ul>
+    </div>
+  <div id="ratingCounterSeperator" class="cl_lw_vs_seperator" style="display: block;"></div><div style="margin: 0px 0px 0px 13px; display: block;" id="ratingCounter">
+        <span id="rcA" class="ratingText">
+            7 out of 10 rated this helpful <span id="rateThisPrefix">- </span><a id="rateThisTopic" href="#feedback" title="Rate this topic">Rate this topic</a>
+            
+        </span>
+    </div></div>
+  <div style="clear:both;"></div>
+  
+  <div id="mainSection">
+    <div id="mainBody">
+      <p>
+        
+      </p> <div class="introduction"><p>The following example program 
+creates a client that connects to a server. The client is built with an 
+asynchronous socket, so execution of the client application is not 
+suspended while the server returns a response. The application sends a 
+string to the server and then displays the string returned by the server
+ on the console.</p></div><div id="sectionSection0" class="seeAlsoNoToggleSection">
+<div id="code-snippet-1" class="codeSnippetContainer" xmlns="">
+    <div class="codeSnippetContainerTabs">
+        <div class="codeSnippetContainerTabActive" dir="ltr"><a>C#</a></div><div class="codeSnippetContainerTab" dir="ltr"><a href="http://msdn.microsoft.com/en-us/library/bew39x2a%28v=vs.100%29.aspx?cs-save-lang=1&amp;cs-lang=vb#code-snippet-1">VB</a></div>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+        <div class="codeSnippetToolBar">
+            <div class="codeSnippetToolBarText">
+                <a name="CodeSnippetCopyLink" style="display: none;" title="Copy to clipboard." href="javascript:if%20(window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_c34d2ab5-f91b-4cce-9f9d-60904df71cb5');">Copy</a>
+            </div>
+        </div>
+        <div id="CodeSnippetContainerCode_c34d2ab5-f91b-4cce-9f9d-60904df71cb5" class="codeSnippetContainerCode" dir="ltr">
+            <div style="color:Black;"><pre><span style="color:Blue;">using</span> System;
+<span style="color:Blue;">using</span> System.Net;
+<span style="color:Blue;">using</span> System.Net.Sockets;
+<span style="color:Blue;">using</span> System.Threading;
+<span style="color:Blue;">using</span> System.Text;
+
+<span style="color:Green;">// State object for receiving data from remote device.</span>
+<span style="color:Blue;">public</span> <span style="color:Blue;">class</span> StateObject {
+    <span style="color:Green;">// Client socket.</span>
+    <span style="color:Blue;">public</span> Socket workSocket = <span style="color:Blue;">null</span>;
+    <span style="color:Green;">// Size of receive buffer.</span>
+    <span style="color:Blue;">public</span> <span style="color:Blue;">const</span> <span style="color:Blue;">int</span> BufferSize = 256;
+    <span style="color:Green;">// Receive buffer.</span>
+    <span style="color:Blue;">public</span> <span style="color:Blue;">byte</span>[] buffer = <span style="color:Blue;">new</span> <span style="color:Blue;">byte</span>[BufferSize];
+    <span style="color:Green;">// Received data string.</span>
+    <span style="color:Blue;">public</span> StringBuilder sb = <span style="color:Blue;">new</span> StringBuilder();
+}
+
+<span style="color:Blue;">public</span> <span style="color:Blue;">class</span> AsynchronousClient {
+    <span style="color:Green;">// The port number for the remote device.</span>
+    <span style="color:Blue;">private</span> <span style="color:Blue;">const</span> <span style="color:Blue;">int</span> port = 11000;
+
+    <span style="color:Green;">// ManualResetEvent instances signal completion.</span>
+    <span style="color:Blue;">private</span> <span style="color:Blue;">static</span> ManualResetEvent connectDone = 
+        <span style="color:Blue;">new</span> ManualResetEvent(<span style="color:Blue;">false</span>);
+    <span style="color:Blue;">private</span> <span style="color:Blue;">static</span> ManualResetEvent sendDone = 
+        <span style="color:Blue;">new</span> ManualResetEvent(<span style="color:Blue;">false</span>);
+    <span style="color:Blue;">private</span> <span style="color:Blue;">static</span> ManualResetEvent receiveDone = 
+        <span style="color:Blue;">new</span> ManualResetEvent(<span style="color:Blue;">false</span>);
+
+    <span style="color:Green;">// The response from the remote device.</span>
+    <span style="color:Blue;">private</span> <span style="color:Blue;">static</span> String response = String.Empty;
+
+    <span style="color:Blue;">private</span> <span style="color:Blue;">static</span> <span style="color:Blue;">void</span> StartClient() {
+        <span style="color:Green;">// Connect to a remote device.</span>
+        <span style="color:Blue;">try</span> {
+            <span style="color:Green;">// Establish the remote endpoint for the socket.</span>
+            <span style="color:Green;">// The name of the </span>
+            <span style="color:Green;">// remote device is "host.contoso.com".</span>
+            IPHostEntry ipHostInfo = Dns.Resolve(<span style="color:#A31515;">"host.contoso.com"</span>);
+            IPAddress ipAddress = ipHostInfo.AddressList[0];
+            IPEndPoint remoteEP = <span style="color:Blue;">new</span> IPEndPoint(ipAddress, port);
+
+            <span style="color:Green;">// Create a TCP/IP socket.</span>
+            Socket client = <span style="color:Blue;">new</span> Socket(AddressFamily.InterNetwork,
+                SocketType.Stream, ProtocolType.Tcp);
+
+            <span style="color:Green;">// Connect to the remote endpoint.</span>
+            client.BeginConnect( remoteEP, 
+                <span style="color:Blue;">new</span> AsyncCallback(ConnectCallback), client);
+            connectDone.WaitOne();
+
+            <span style="color:Green;">// Send test data to the remote device.</span>
+            Send(client,<span style="color:#A31515;">"This is a test&lt;EOF&gt;"</span>);
+            sendDone.WaitOne();
+
+            <span style="color:Green;">// Receive the response from the remote device.</span>
+            Receive(client);
+            receiveDone.WaitOne();
+
+            <span style="color:Green;">// Write the response to the console.</span>
+            Console.WriteLine(<span style="color:#A31515;">"Response received : {0}"</span>, response);
+
+            <span style="color:Green;">// Release the socket.</span>
+            client.Shutdown(SocketShutdown.Both);
+            client.Close();
+            
+        } <span style="color:Blue;">catch</span> (Exception e) {
+            Console.WriteLine(e.ToString());
+        }
+    }
+
+    <span style="color:Blue;">private</span> <span style="color:Blue;">static</span> <span style="color:Blue;">void</span> ConnectCallback(IAsyncResult ar) {
+        <span style="color:Blue;">try</span> {
+            <span style="color:Green;">// Retrieve the socket from the state object.</span>
+            Socket client = (Socket) ar.AsyncState;
+
+            <span style="color:Green;">// Complete the connection.</span>
+            client.EndConnect(ar);
+
+            Console.WriteLine(<span style="color:#A31515;">"Socket connected to {0}"</span>,
+                client.RemoteEndPoint.ToString());
+
+            <span style="color:Green;">// Signal that the connection has been made.</span>
+            connectDone.Set();
+        } <span style="color:Blue;">catch</span> (Exception e) {
+            Console.WriteLine(e.ToString());
+        }
+    }
+
+    <span style="color:Blue;">private</span> <span style="color:Blue;">static</span> <span style="color:Blue;">void</span> Receive(Socket client) {
+        <span style="color:Blue;">try</span> {
+            <span style="color:Green;">// Create the state object.</span>
+            StateObject state = <span style="color:Blue;">new</span> StateObject();
+            state.workSocket = client;
+
+            <span style="color:Green;">// Begin receiving the data from the remote device.</span>
+            client.BeginReceive( state.buffer, 0, StateObject.BufferSize, 0,
+                <span style="color:Blue;">new</span> AsyncCallback(ReceiveCallback), state);
+        } <span style="color:Blue;">catch</span> (Exception e) {
+            Console.WriteLine(e.ToString());
+        }
+    }
+
+    <span style="color:Blue;">private</span> <span style="color:Blue;">static</span> <span style="color:Blue;">void</span> ReceiveCallback( IAsyncResult ar ) {
+        <span style="color:Blue;">try</span> {
+            <span style="color:Green;">// Retrieve the state object and the client socket </span>
+            <span style="color:Green;">// from the asynchronous state object.</span>
+            StateObject state = (StateObject) ar.AsyncState;
+            Socket client = state.workSocket;
+
+            <span style="color:Green;">// Read data from the remote device.</span>
+            <span style="color:Blue;">int</span> bytesRead = client.EndReceive(ar);
+
+            <span style="color:Blue;">if</span> (bytesRead &gt; 0) {
+                <span style="color:Green;">// There might be more data, so store the data received so far.</span>
+            state.sb.Append(Encoding.ASCII.GetString(state.buffer,0,bytesRead));
+
+                <span style="color:Green;">// Get the rest of the data.</span>
+                client.BeginReceive(state.buffer,0,StateObject.BufferSize,0,
+                    <span style="color:Blue;">new</span> AsyncCallback(ReceiveCallback), state);
+            } <span style="color:Blue;">else</span> {
+                <span style="color:Green;">// All the data has arrived; put it in response.</span>
+                <span style="color:Blue;">if</span> (state.sb.Length &gt; 1) {
+                    response = state.sb.ToString();
+                }
+                <span style="color:Green;">// Signal that all bytes have been received.</span>
+                receiveDone.Set();
+            }
+        } <span style="color:Blue;">catch</span> (Exception e) {
+            Console.WriteLine(e.ToString());
+        }
+    }
+
+    <span style="color:Blue;">private</span> <span style="color:Blue;">static</span> <span style="color:Blue;">void</span> Send(Socket client, String data) {
+        <span style="color:Green;">// Convert the string data to byte data using ASCII encoding.</span>
+        <span style="color:Blue;">byte</span>[] byteData = Encoding.ASCII.GetBytes(data);
+
+        <span style="color:Green;">// Begin sending the data to the remote device.</span>
+        client.BeginSend(byteData, 0, byteData.Length, 0,
+            <span style="color:Blue;">new</span> AsyncCallback(SendCallback), client);
+    }
+
+    <span style="color:Blue;">private</span> <span style="color:Blue;">static</span> <span style="color:Blue;">void</span> SendCallback(IAsyncResult ar) {
+        <span style="color:Blue;">try</span> {
+            <span style="color:Green;">// Retrieve the socket from the state object.</span>
+            Socket client = (Socket) ar.AsyncState;
+
+            <span style="color:Green;">// Complete sending the data to the remote device.</span>
+            <span style="color:Blue;">int</span> bytesSent = client.EndSend(ar);
+            Console.WriteLine(<span style="color:#A31515;">"Sent {0} bytes to server."</span>, bytesSent);
+
+            <span style="color:Green;">// Signal that all bytes have been sent.</span>
+            sendDone.Set();
+        } <span style="color:Blue;">catch</span> (Exception e) {
+            Console.WriteLine(e.ToString());
+        }
+    }
+    
+    <span style="color:Blue;">public</span> <span style="color:Blue;">static</span> <span style="color:Blue;">int</span> Main(String[] args) {
+        StartClient();
+        <span style="color:Blue;">return</span> 0;
+    }
+}
+</pre></div>
+            
+        </div>
+    </div>
+</div>
+</div><div><div class="LW_CollapsibleArea_TitleDiv"><div><a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Click to collapse. Double-click to collapse all."><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">See Also</span></a><div class="LW_CollapsibleArea_HrDiv"><hr class="LW_CollapsibleArea_Hr"></div></div></div><div class="sectionblock"><a id="seeAlsoToggle"></a><h4 class="subHeading">Concepts</h4><div class="seeAlsoStyle"><span><a href="http://msdn.microsoft.com/en-us/library/fx6588te%28v=vs.100%29.aspx">Asynchronous Server Socket Example</a></span></div><div class="seeAlsoStyle"><span><a href="http://msdn.microsoft.com/en-us/library/80z2essb%28v=vs.100%29.aspx">Using a Synchronous Server Socket</a></span></div><h4 class="subHeading">Other Resources</h4><div class="seeAlsoStyle"><span><a href="http://msdn.microsoft.com/en-us/library/w89fhyex%28v=vs.100%29.aspx">Socket Code Examples</a></span></div></div></div></div>
+  </div>
+</div>
+
+    <p style="padding: 15px 0px; margin: 0px;"></p>
+    
+    
+    
+
+
+
+<script id="CommentTemplate" type="text/x-jquery-tmpl">
+    <div class="communityContentAnnotation">
+        <a name="${Index}"></a>
+        <h3>
+            ${Title}
+        </h3>
+        <div class="communityContentAnnotationBody">
+            {{html Body}}
+        </div>
+        <div class="communityContentAnnotationInfo">
+            <div class="communityContentAnnotationAvatarContainer">
+                <a href="${UserAvatar.Href}" title="${UserAvatar.ToolTip}" class="communityContentAnnotationAvatar"><img src="${UserAvatar.ImageUrl}" alt="${UserAvatar.ImageAltText}" width="34" height="34" /></a>
+            </div>
+            <div class="communityContentAnnotationUserDateContainer">
+                <div class="communityContentAnnotationUserContainer">
+                    <a href="${UserAvatar.Href}">
+                        ${User}
+                    </a>
+                </div>
+                <div class="communityContentAnnotationDateContainer">
+                    <span>${Date}</span>
+                    
+                    {{if EditLink}}
+                        <span>
+                            <a href="${EditLink.Href}" title="${EditLink.ToolTip}" class="communityContentCommentEditLink">${EditLink.Title}</a>
+                        </span>
+                    {{/if}}
+
+                    {{if DeleteLink}}
+                        <span>
+                            <a href="${DeleteLink.Href}" title="${DeleteLink.ToolTip}" class="communityContentDeleteLink">${DeleteLink.Title}</a>
+                        </span>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<div class="communityContentContainer">
+    <div id="CommunityContentHeader" class="communityContentHeader">
+        <div class="communityContentHeaderTitleContainer">
+            <h2>Community Additions</h2>
+                <a class="communityContentAddLink" href="http://msdn.microsoft.com/en-us/library/community/add/bew39x2a%28v=vs.100%29.aspx">
+                    <span class="communityContentAddButton" title="Add">
+                        ADD
+                    </span>
+                </a>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+    
+    <div id="CommunityComments" data-url="/en-us/library/community/comments/bew39x2a(v=vs.100).aspx"><div class="communityContentAnnotation">         <a name="7"></a>         <h3>             How to use in a VS 2010 project         </h3>         <div class="communityContentAnnotationBody">             <p>Hi everyone,</p><br><p>Excuse
+ my ignorance, but how do I take the code above and use it in a project 
+in VS 2010. Is it a console application, a windows forms application, 
+etc.</p><br><p>Is the code a separate class I make calls to or is it the main body of code that gets executed?</p><br><p>Thanks.</p>         </div>         <div class="communityContentAnnotationInfo">             <div class="communityContentAnnotationAvatarContainer">                 <a href="http://social.msdn.microsoft.com/profile/bkelly1977/" title="" class="communityContentAnnotationAvatar"><img src="Asynchronous%20Client%20Socket%20Example_files/avatar_004.jpg" alt="" height="34" width="34"></a>             </div>             <div class="communityContentAnnotationUserDateContainer">                 <div class="communityContentAnnotationUserContainer">                     <a href="http://social.msdn.microsoft.com/profile/bkelly1977/">                         BKelly1977                     </a>                 </div>                 <div class="communityContentAnnotationDateContainer">                     <span>5/7/2013</span>                                                                                 </div>             </div>         </div>     </div><div class="communityContentAnnotation">         <a name="6"></a>         <h3>             Asynchronous Client Socket ManualResetEvent holding up execution         </h3>         <div class="communityContentAnnotationBody">             <span>I am attempting to utilize MSDN's <strong>Asynchronous Client Socket </strong>code sample to connect and control some home equipment. &nbsp;As I understand, the sample code's <strong>ReceiveCallback</strong> method uses an instance of <strong>ManualResetEvent</strong> and <strong>receiveDone.WaitOne()</strong>
+ to hold processing of the current thread until the thread receives a 
+signal that all of the socket's data has been transmitted from the 
+remote device. &nbsp;After all of the socket's data has been transmitted
+ (the socket's data is empty and <em>bytesRead = 0</em>), the Waithandle is removed and the application continues processing. &nbsp;</span><br><span>Unfortunately,
+ by stepping-through the execution of the code, it appears that after 
+the last time that the client returns data from the remote device, <em>ReceiveCallback&nbsp;</em><span>never returns to see if the data-queue is empty</span>&nbsp;(i.e. <em>bytesRead = 0</em>), and thus never enters the "else" condition in<em> ReceiveCallback</em> where the state of the </span><br><em>ManualResetEvent</em><br><span>&nbsp;would
+ have been reset and the application would have continued to process. 
+&nbsp;Thus, since it never enters the "else" condition, <em>ManualResetEvent</em> is never reset and the application freezes.</span>&nbsp;&nbsp;<span>Although I can remove the "<em>receiveDone.WaitOne()</em>" method from the code - permitting execution without waiting for the <em>ManualResetEvent</em>'s
+ notification that all of the data has been received; this results in 
+the data-string returned by the equipment to be typically incomplete. 
+&nbsp;</span><span>Has anyone seen this before or had any experience on how to work-around this issue? Any advice?</span>$         </div>         <div class="communityContentAnnotationInfo">             <div class="communityContentAnnotationAvatarContainer">                 <a href="http://social.msdn.microsoft.com/profile/whunter1955/" title="" class="communityContentAnnotationAvatar"><img src="Asynchronous%20Client%20Socket%20Example_files/avatar_007.jpg" alt="" height="34" width="34"></a>             </div>             <div class="communityContentAnnotationUserDateContainer">                 <div class="communityContentAnnotationUserContainer">                     <a href="http://social.msdn.microsoft.com/profile/whunter1955/">                         whunter1955                     </a>                 </div>                 <div class="communityContentAnnotationDateContainer">                     <span>7/13/2012</span>                                                                                 </div>             </div>         </div>     </div><div class="communityContentAnnotation">         <a name="5"></a>         <h3>             Reconnect problem         </h3>         <div class="communityContentAnnotationBody">             <span lang="en"><br>  <span>The problem</span><br>  <span>lies in the</span><br>  <span>ManualResetEvents</span><br>  <span>because its</span><br>  <span>state is that of</span><br>  <span>the previous</span><br>  <span>connection.</span><br></span><br><span lang="en"><br>  <span><br>    <!----><br>  </span><br>  <span><br>    <!----><br>  </span><br>  <br><br>  <span>Try this</span><br>  <span>:</span><br>  <br><br>  <br><br>  <span>client.Shutdown</span><br>  <span>(</span><br>  <span>SocketShutdown.Both</span><br>  <span>);</span><br>  <br><br>  <span>client.Close</span><br>  <span>();</span><br>  <br><br>  <br><br>  <span>connectDone.Reset</span><br>  <span>();</span><br>  <br><br>  <span>sendDone.Reset</span><br>  <span>();</span><br>  <br><br>  <span>receiveDone.Reset</span><br>  <span>();</span><br></span>         </div>         <div class="communityContentAnnotationInfo">             <div class="communityContentAnnotationAvatarContainer">                 <a href="http://social.msdn.microsoft.com/profile/habeer/" title="" class="communityContentAnnotationAvatar"><img src="Asynchronous%20Client%20Socket%20Example_files/avatar_002.jpg" alt="" height="34" width="34"></a>             </div>             <div class="communityContentAnnotationUserDateContainer">                 <div class="communityContentAnnotationUserContainer">                     <a href="http://social.msdn.microsoft.com/profile/habeer/">                         habeer                     </a>                 </div>                 <div class="communityContentAnnotationDateContainer">                     <span>12/28/2011</span>                                                                                 </div>             </div>         </div>     </div><div class="communityContentAnnotation">         <a name="4"></a>         <h3>             Reconnect problem.         </h3>         <div class="communityContentAnnotationBody">
+             Tried to reconnect to the server application after I've 
+sent the first message. Did'nt work. The "client" socket was still up 
+and needed to be flushed or resetted back to zero. So, instead of 
+writing:<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; client.Shutdown(SocketShutdown.Both)<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; client.Close()<br><br>I typed:<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; client = nothing<br><br>Found
+ this answer, after reading some threads about this application. Seems 
+that I'm not the only one who wants to send more than one message to the
+ server without restarting my client program. By the way, I'll write 
+programs onto a pocket PC, maybe thats why this works. Do'nt know, but 
+give it a shot if youre stucked with the same problem as I was. <br>         </div>         <div class="communityContentAnnotationInfo">             <div class="communityContentAnnotationAvatarContainer">                 <a href="http://social.msdn.microsoft.com/profile/swejonas/" title="" class="communityContentAnnotationAvatar"><img src="Asynchronous%20Client%20Socket%20Example_files/avatar.jpg" alt="" height="34" width="34"></a>             </div>             <div class="communityContentAnnotationUserDateContainer">                 <div class="communityContentAnnotationUserContainer">                     <a href="http://social.msdn.microsoft.com/profile/swejonas/">                         SweJonas                     </a>                 </div>                 <div class="communityContentAnnotationDateContainer">                     <span>6/6/2011</span>                                                                                 </div>             </div>         </div>     </div><div class="communityContentAnnotation">         <a name="3"></a>         <h3>             is not suspended?         </h3>         <div class="communityContentAnnotationBody">             you're&nbsp;right,&nbsp;&nbsp;WaitOne() frezzes an MDI App         </div>         <div class="communityContentAnnotationInfo">             <div class="communityContentAnnotationAvatarContainer">                 <a href="http://social.msdn.microsoft.com/profile/fher.c/" title="" class="communityContentAnnotationAvatar"><img src="Asynchronous%20Client%20Socket%20Example_files/avatar_006.jpg" alt="" height="34" width="34"></a>             </div>             <div class="communityContentAnnotationUserDateContainer">                 <div class="communityContentAnnotationUserContainer">                     <a href="http://social.msdn.microsoft.com/profile/fher.c/">                         Fher.C                     </a>                 </div>                 <div class="communityContentAnnotationDateContainer">                     <span>5/23/2011</span>                                                                                 </div>             </div>         </div>     </div><div class="communityContentAnnotation">         <a name="2"></a>         <h3>             Dns.Resolve         </h3>         <div class="communityContentAnnotationBody">             <pre>//Update for the example:<br><br>IPHostEntry ipHostInfo = Dns.GetHostEntry(HostOrIP);</pre>         </div>         <div class="communityContentAnnotationInfo">             <div class="communityContentAnnotationAvatarContainer">                 <a href="http://social.msdn.microsoft.com/profile/barrakoda/" title="" class="communityContentAnnotationAvatar"><img src="Asynchronous%20Client%20Socket%20Example_files/avatar_005.jpg" alt="" height="34" width="34"></a>             </div>             <div class="communityContentAnnotationUserDateContainer">                 <div class="communityContentAnnotationUserContainer">                     <a href="http://social.msdn.microsoft.com/profile/barrakoda/">                         Barrakoda                     </a>                 </div>                 <div class="communityContentAnnotationDateContainer">                     <span>10/20/2010</span>                                                                                 </div>             </div>         </div>     </div><div class="communityContentAnnotation">         <a name="1"></a>         <h3>             Dns.Resolve         </h3>         <div class="communityContentAnnotationBody">             In viewing the .NET 4.0 version of this example it still shows Dns.Resolve being used even though it is obsolete. <br><br>Would it be too much to ask to please update the examples please?<br>         </div>         <div class="communityContentAnnotationInfo">             <div class="communityContentAnnotationAvatarContainer">                 <a href="http://social.msdn.microsoft.com/profile/thomas%20lee/" title="" class="communityContentAnnotationAvatar"><img src="Asynchronous%20Client%20Socket%20Example_files/avatar_003.jpg" alt="" height="34" width="34"></a>             </div>             <div class="communityContentAnnotationUserDateContainer">                 <div class="communityContentAnnotationUserContainer">                     <a href="http://social.msdn.microsoft.com/profile/thomas%20lee/">                         Thomas Lee                     </a>                 </div>                 <div class="communityContentAnnotationDateContainer">                     <span>9/4/2010</span>                                                                                 </div>             </div>         </div>     </div></div>
+</div>
+
+
+
+
+<div class="libraryMemberFilter">
+    <div class="filterContainer">
+        <span>Show:</span>
+        <label>
+            <input class="libraryFilterInherited" checked="checked" value="Inherit" type="checkbox">Inherited
+        </label>
+        <label>
+            <input class="libraryFilterProtected" checked="checked" value="Protected" type="checkbox">Protected
+        </label>
+    </div>
+</div>
+    
+<input id="libraryMemberFilterEmptyWarning" value="There are no members available with your current filter settings." type="hidden">
+
+
+ 
+</div>
+
+
+            </div>
+            <div class="clear"></div>
+        
+            
+    
+<input name="__RequestVerificationToken" value="wSJkLUOirtii0ISxG5471o-tCb0s8JtSbPT0iHsKJH6UC1Kpn5DZ9WijLwUDUrjJ082xX_X-ft-h5WaywSwI98OF0HbCCuCM7RpzA1yOzziuUoI_dutbyptN8ZQOgceSvgBQ8Q2" type="hidden">
+<input id="ratingSubmitUrl" value="http://msdn.microsoft.com/en-us/library/feedback/add/bew39x2a(v=vs.100).aspx" type="hidden">
+<input id="isTopicRated" value="false" type="hidden">
+
+
+
+
+        
+    <link type="text/css" rel="stylesheet">
+    
+<div id="ux-footer" class="" style="" dir="ltr">
+    <footer class="top">
+        <div data-fragmentname="LeftLinks" id="Fragment_LeftLinks" xmlns="http://www.w3.org/1999/xhtml">
+  
+  <div class="LinkList">
+    <div class="LinkListTitle">Dev centers</div>
+    <div class="Links">
+      <ul class="LinkColumn" style="width: 100%">
+        <li>
+          <a href="http://msdn.microsoft.com/windows" id="LeftLinks_2148_1" class="windowsBlue" xmlns="http://www.w3.org/1999/xhtml">Windows</a>
+        </li>
+        <li>
+          <a href="http://dev.windowsphone.com/" id="LeftLinks_2148_2" class="windowsPurple" xmlns="http://www.w3.org/1999/xhtml">Windows Phone</a>
+        </li>
+        <li>
+          <a href="http://msdn.microsoft.com/office" id="LeftLinks_2148_3" class="office" xmlns="http://www.w3.org/1999/xhtml">Office</a>
+        </li>
+        <li>
+          <a href="http://msdn.microsoft.com/vstudio" id="LeftLinks_2148_4" class="visualStudio" xmlns="http://www.w3.org/1999/xhtml">Visual Studio</a>
+        </li>
+        <li>
+          <a href="http://azure.microsoft.com/en-us/documentation/" id="LeftLinks_2148_12" xmlns="http://www.w3.org/1999/xhtml">Microsoft Azure</a>
+        </li>
+        <li>
+          <a href="http://msdn.microsoft.com/aa937802" id="LeftLinks_2148_5" xmlns="http://www.w3.org/1999/xhtml">More...</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>    
+        <div id="rightLinks">
+            <div data-fragmentname="CenterLinks1" id="Fragment_CenterLinks1" xmlns="http://www.w3.org/1999/xhtml">
+  
+  <div class="LinkList">
+    <div class="LinkListTitle">Learning resources</div>
+    <div class="Links">
+      <ul class="LinkColumn" style="width: 100%">
+        <li>
+          <a href="http://www.microsoftvirtualacademy.com/" id="CenterLinks1_2151_4" xmlns="http://www.w3.org/1999/xhtml">Microsoft Virtual Academy</a>
+        </li>
+        <li>
+          <a href="http://channel9.msdn.com/" id="CenterLinks1_2151_5" xmlns="http://www.w3.org/1999/xhtml">Channel 9</a>
+        </li>
+        <li>
+          <a href="http://www.interoperabilitybridges.com/" id="CenterLinks1_2151_6" xmlns="http://www.w3.org/1999/xhtml">Interoperability Bridges</a>
+        </li>
+        <li>
+          <a href="http://msdn.microsoft.com/magazine/" id="CenterLinks1_2151_7" xmlns="http://www.w3.org/1999/xhtml">MSDN Magazine</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+            <div data-fragmentname="CenterLinks2" id="Fragment_CenterLinks2" xmlns="http://www.w3.org/1999/xhtml">
+  
+  <div class="LinkList">
+    <div class="LinkListTitle">Community</div>
+    <div class="Links">
+      <ul class="LinkColumn" style="width: 100%">
+        <li>
+          <a href="http://social.msdn.microsoft.com/forums/en-us/home" id="CenterLinks2_2151_8" xmlns="http://www.w3.org/1999/xhtml">Forums</a>
+        </li>
+        <li>
+          <a href="http://blogs.msdn.com/b/developer-tools/" id="CenterLinks2_2151_9" xmlns="http://www.w3.org/1999/xhtml">Blogs</a>
+        </li>
+        <li>
+          <a href="http://www.codeplex.com/" id="CenterLinks2_2151_10" xmlns="http://www.w3.org/1999/xhtml">Codeplex</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+            <div data-fragmentname="CenterLinks3" id="Fragment_CenterLinks3" xmlns="http://www.w3.org/1999/xhtml">
+  
+  <div class="LinkList">
+    <div class="LinkListTitle">Support</div>
+    <div class="Links">
+      <ul class="LinkColumn" style="width: 100%">
+        <li>
+          <a href="http://msdn.microsoft.com/hh361695" id="CenterLinks3_2151_11" xmlns="http://www.w3.org/1999/xhtml">Self support</a>
+        </li>
+        <li>
+          <a href="http://support.microsoft.com/" id="CenterLinks3_2151_12" xmlns="http://www.w3.org/1999/xhtml">Other support options</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+            <div class="nth-child-4n" data-fragmentname="CenterLinks4" id="Fragment_CenterLinks4" xmlns="http://www.w3.org/1999/xhtml">
+  
+  <div class="LinkList">
+    <div class="LinkListTitle">Programs</div>
+    <div class="Links">
+      <ul class="LinkColumn" style="width: 100%">
+        <li>
+          <a href="http://www.microsoft.com/bizspark/" id="CenterLinks4_2151_13" xmlns="http://www.w3.org/1999/xhtml">BizSpark (for startups)</a>
+        </li>
+        <li>
+          <a href="https://www.dreamspark.com/" id="CenterLinks4_2151_14" xmlns="http://www.w3.org/1999/xhtml">DreamSpark</a>
+        </li>
+        <li>
+          <a href="https://www.microsoft.com/faculty" id="CenterLinks4_2151_15" xmlns="http://www.w3.org/1999/xhtml">Faculty Connection</a>
+        </li>
+        <li>
+          <a href="http://www.microsoft.com/student/" id="CenterLinks4_2151_16" xmlns="http://www.w3.org/1999/xhtml">Microsoft Student</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+    <div class="feedbackContainer">
+        <div id="feedbackSection1" class="clear">
+            <div class="left">Did you find this helpful?</div>
+            <div class="left">
+                <div class="left">
+                    <input name="feedback" id="feedbackYes" value="1" class="feedbackYesClick" data-enhance="false" type="radio"><label class="feedbackYesClick" for="feedbackYes"> Yes</label>
+                </div>
+                <div class="left">
+                    <input name="feedback" id="feedbackNo" value="0" class="feedbackNoClick" data-enhance="false" type="radio"><label class="feedbackNoClick" for="feedbackNo"> No</label>
+                </div>
+            </div>
+            <a class="rateThisAnchor" name="feedback"></a>
+        </div>
+        <div id="feedbackSection2" class="clear">
+        </div>
+        <div id="feedbackSection3" class="clear">
+                    <div>
+                        <input id="checkboxNo201" name="chkbxNo" value="201" data-enhance="false" type="checkbox">
+                        <label for="checkboxNo201">Not accurate</label>
+                    </div>
+                    <div>
+                        <input id="checkboxNo202" name="chkbxNo" value="202" data-enhance="false" type="checkbox">
+                        <label for="checkboxNo202">Not enough depth</label>
+                    </div>
+                    <div>
+                        <input id="checkboxNo203" name="chkbxNo" value="203" data-enhance="false" type="checkbox">
+                        <label for="checkboxNo203">Need more code examples</label>
+                    </div>
+        </div>
+        <div id="feedbackSection4" class="clear">
+            <div>
+                <textarea id="feedbackTextArea" name="feedbackText" class="TellUsMoreTextBoxSearchLoaded" data-enhance="false">Tell us more...</textarea>
+            </div>
+            <div class="left"><span class="counter">(<span id="feedbackTextCounter">1500</span> characters remaining)</span></div>
+            <div class="right">
+                <button type="button" id="feedbackSubmit" title="Click to Submit Feedback" data-enhance="false">Submit</button>
+            </div>
+        </div>
+        <div id="feedbackSection5">Thank you for your feedback</div>
+        <input id="feedbackValue" value="" type="hidden">
+        <input id="tellUsMoreText" value="Tell us more..." type="hidden">
+        <input id="maxTextBoxCharacters" value="1500" type="hidden">
+        <input id="submitUrl" value="/en-us/msdn/ux/uxservices/feedback/add/footer(v=vs.100)" type="hidden">
+        <input id="feedbackSiteName" name="feedbackSiteName" value="" type="hidden">
+        <input id="feedbackPriority" name="feedbackPriority" value="" type="hidden">
+        <input id="feedbackSourceUrl" name="feedbackSourceUrl" value="" type="hidden">
+        <input id="ClientIP" name="ClientIP" value="" type="hidden">
+        <input id="ClientOS" name="ClientOS" value="" type="hidden">
+        <input id="ClientBrowser" name="ClientBrowser" value="" type="hidden">
+        <input id="ClientTime" name="ClientTime" value="" type="hidden">
+        <input id="ClientDate" name="ClientDate" value="" type="hidden">
+    </div>
+    
+    
+        </div>
+    </footer>
+    
+    <footer class="bottom">
+        <span class="localeContainer">
+                <form class="selectLocale" id="selectLocaleForm" action="http://msdn.microsoft.com/en-us/selectlocale-dmc">
+        <input name="fromPage" value="http%3a%2f%2fmsdn.microsoft.com%2fen-us%2flibrary%2fbew39x2a(v%3dvs.100).aspx" type="hidden">
+        <a href="#" onclick="$('#selectLocaleForm').submit();return false;" title="Change your language">United States (English)</a>
+    </form>    
+
+
+        </span>
+        
+        <div data-fragmentname="BottomLinks" id="Fragment_BottomLinks" xmlns="http://www.w3.org/1999/xhtml">
+  
+  <div class="LinkList">
+    <div class="Links">
+      <ul class="LinkColumn horizontal">
+        <li>
+          <a href="http://msdn.microsoft.com/newsletter.aspx" id="BottomLinks_2148_7" xmlns="http://www.w3.org/1999/xhtml">Newsletter</a>
+        </li>
+        <li>
+          <a href="http://msdn.microsoft.com/dn529288" id="BottomLinks_2148_8" xmlns="http://www.w3.org/1999/xhtml">Privacy &amp; cookies</a>
+        </li>
+        <li>
+          <a href="http://msdn.microsoft.com/cc300389" id="BottomLinks_2148_9" xmlns="http://www.w3.org/1999/xhtml">Terms of use</a>
+        </li>
+        <li>
+          <a href="http://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/EN-US.aspx" id="BottomLinks_2148_10" xmlns="http://www.w3.org/1999/xhtml">Trademarks</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>    
+        <span class="logoLegal">
+            <span class="logo"></span>
+            <span class="copyright">© 2014 Microsoft</span>
+        </span>
+    </footer>
+</div>
+    
+
+
+            <div class="footerPrintView">
+                <div class="footerCopyrightPrintView">© 2014 Microsoft. All rights reserved.</div>
+            </div>
+
+            
+            
+    
+    
+    <input id="tocPaddingPerLevel" value="17" type="hidden">
+
+
+        
+            <input id="MtpsDevice" value="Default" type="hidden">
+
+
+<!--[CDATA[ Third party scripts and code linked to or referenced from this website are licensed to you by the parties that own such code, not by Microsoft.  See ASP.NET Ajax CDN Terms of Use – http://www.asp.net/ajaxlibrary/CDN.ashx. ]]-->
+        
+            
+            
+            
+            
+            
+        
+
+
+
+
+
+<noscript><div><img alt="DCSIMG" id="Img1" width="1" height="1" src="http://m.webtrends.com/dcsmgru7m99k7mqmgrhudo0k8_8c6m/njs.gif?dcsuri=/nojavascript&amp;WT.js=No" /></div></noscript>
+
+
+
+
+
+
+
+
+
+<noscript>
+  <a href="http://www.omniture.com" title="Web Analytics">
+    <img src="//msstonojsmsdn.112.2o7.net/b/ss/msstonojsmsdn/1/H.20.2--NS/0" height="1" width="1" border="0" alt="" />
+  </a>
+</noscript>
+
+
+
+
+<div id="globalRequestVerification">
+    <input name="__RequestVerificationToken" value="S9-e9oAekXcIcLEEpblJSbK9XJ6NtthwVEkfquyo42uGI7CBuR55PMcJFpX1NNDBOoCW6h-RrASCnM8XdHc7hNOnDKz7dQEiXIeDdScxaNLKSVFeoaHLPzdiE3G0FqsYgFL-lA2" type="hidden">
+</div>
+
+
+        </div>
+        
+        
+        
+    <script type="text/javascript" class="mtps-injected">
+/*<![CDATA[*/
+(function(window,document){"use strict";function preload(scripts){for(var result=[],script,e,i=0;i<scripts.length;i++)script=scripts[i],script.hasOwnProperty("url")&&(e=document.createElement("script"),e.src=script.url,script.throwaway=e),result.push(script);return result}function inject(scripts,index){var script,elem;if(index>=scripts.length){delete mtps.injectScripts;return}script=scripts[index];elem=document.createElement("script");elem.className="mtps-injected";elem.async=!1;var isLoaded=!1,timeoutId=0,injectNextFnName="",injectNext=elem.onerror=function(){isLoaded||(isLoaded=!0,inject(scripts,index+1),window.clearTimeout(timeoutId),elem.onload=elem.onerror=elem.onreadystatechange=null,injectNextFnName&&delete mtps[injectNextFnName],elem.removeEventListener&&elem.removeEventListener("load",injectNext,!1))};elem.addEventListener?elem.addEventListener("load",injectNext,!1):elem.readyState==="uninitialized"?elem.onreadystatechange=function(){(this.readyState==="loaded"||this.readyState==="complete")&&injectNext()}:elem.onload=injectNext;script.hasOwnProperty("url")?(timeoutId=window.setTimeout(injectNext,12e4),elem.src=script.url):(injectNextFnName="_injectNextScript_"+index,mtps[injectNextFnName]=injectNext,timeoutId=window.setTimeout(injectNext,2e3),elem.text="try {\n"+script.txt+"\n} finally { MTPS."+injectNextFnName+" && MTPS."+injectNextFnName+"(); }");parent.appendChild(elem)}var mtps=window.MTPS||(window.MTPS={}),parent=document.getElementsByTagName("head")[0];mtps.injectScripts=function(scripts){inject(preload(scripts),0)}})(window,document);
+MTPS.injectScripts([
+	{ txt: "/**/\r\n(window.MTPS || (window.MTPS = {})).cdnDomains || (window.MTPS.cdnDomains = { \r\n\t\"image\": \"http://i.msdn.microsoft.com\", \r\n\t\"js\": \"http://i2.msdn.microsoft.com\", \r\n\t\"css\": \"http://i3.msdn.microsoft.com\"\r\n});\r\n/**/" },
+	{ url: "http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js" },
+	{ txt: "//\n  var literalNormalizedUrl = \u0027/en-us/library/bew39x2a(d=default,l=en-us,v=vs.100).aspx\u0027;\n  var wt_nvr_ru = \u0027WT_NVR_RU\u0027;\n  var wt_fpcdom = \u0027.microsoft.com\u0027;\n  var wt_domlist = \u0027msdn.microsoft.com\u0027;\n  var wt_pathlist = \u0027\u0027;\n  var wt_paramlist = \u0027DCSext.mtps_devcenter\u0027;\n  var wt_siteid = \u0027MSDN\u0027;\n  var gDomain = \u0027m.webtrends.com\u0027;\n  var gDcsId = \u0027dcsmgru7m99k7mqmgrhudo0k8_8c6m\u0027;\n  var gFpc = \u0027WT_FPC\u0027;\n\n\n\n  if (document.cookie.indexOf(gFpc + \"=\") == -1) {\n    var wtidJs = document.createElement(\"script\");\n    wtidJs.src = \"//\" + gDomain + \"/\" + gDcsId + \"/wtid.js\";\n    document.getElementsByTagName(\"head\")[0].appendChild(wtidJs);\n  }\n\n\n\n  var detectedLocale = \u0027en-us\u0027;\n  var wtsp = \u0027msdnlib_dotnet\u0027;\n  var gTrackEvents = \u00270\u0027;\n/**/" },
+	{ txt: "/**/\n  var omni_guid = \"7c4fa33a-7072-4350-a507-57151e4e3d49\";\n/**/" },
+	{ txt: "//\n\n            window.appInsightsId = \u002760854590-027a-4ae4-98be-2741a40f355f\u0027;\n            //" },
+	{ url: "http://i2.msdn.microsoft.com/Combined.js?resources=0:Utilities,1:Layout,2:Header,2:Footer,3:Feedback,0:Topic,4:webtrendsscript,5:omni_rsid_MSDN,0:AppInsightsPerf,6:SearchBox;/Areas/Epx/Content/Scripts:0,/Areas/Centers/Themes/Base/Content:1,/Areas/Centers/Themes/StandardDevCenter/Content:2,/Areas/Epx/Shared/Content:3,/Areas/Global/Content/Webtrends/resources:4,/Areas/Global/Content/Omniture/resources/MSDN:5,/Areas/Epx/Themes/Base/Content:6\u0026amp;hashKey=8CEF81D3D082139E2F8EC0C47C5F3779" },
+	{ url: "http://i3.services.social.microsoft.com/search/Widgets/SearchBox.jss?boxid=HeaderSearchTextBox\u0026btnid=HeaderSearchButton\u0026brand=Msdn\u0026loc=en-us\u0026focusOnInit=false\u0026emptyWatermark=true\u0026searchButtonTooltip=Search MSDN" },
+	{ url: "http://i2.msdn.microsoft.com/Combined.js?resources=0:PrintExportButton,1:Toc,1:NavigationResize,2:FeedbackCounter;/Areas/Library/Themes/Base/Content:0,/Areas/Library/Content:1,/Areas/Epx/Shared/Content:2\u0026amp;hashKey=66872A62A3ED5011793DE8DC80B4968C" },
+	{ txt: "MTPS = window.MTPS || {}; MTPS.LocalizedStrings = window.MTPS.LocalizedStrings || {}; MTPS.LocalizedStrings.ExpandButtonTooltip = \u0027Expand\u0027; MTPS.LocalizedStrings.CollapseButtonTooltip = \u0027Collapse\u0027; MTPS.LocalizedStrings.EnhancedExpandTooltip = \u0027Click to expand. Double-click to expand all.\u0027; MTPS.LocalizedStrings.EnhancedCollapseTooltip = \u0027Click to collapse. Double-click to collapse all.\u0027; MTPS.LocalizedStrings.ExpandAllButtonTooltip = \u0027Expand All\u0027; MTPS.LocalizedStrings.CollapseAllButtonTooltip = \u0027Collapse All\u0027;" },
+	{ url: "http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js" },
+	{ url: "http://i2.msdn.microsoft.com/Combined.js?resources=0:CommunityContent,0:LibraryMemberFilter,1:Toc_Fixed,1:CodeSnippet,1:TopicNotInScope,1:CollapsibleArea,1:VersionSelector,1:SurveyBroker;/Areas/Library/Content:0,/Areas/Epx/Content/Scripts:1\u0026amp;hashKey=8E179A26B9E7A3B228204A01C2D1F548" },
+	{ txt: "$(document).ready(function() {\n        try {\n            var token = $(\"#globalRequestVerification input[name=\u0027__RequestVerificationToken\u0027]\").clone();\n            $(\"#siteFeedbackForm\").append(token);\n        } catch(err) {\n            \n        }\n    });" }
+]);
+
+/*]]>*/
+</script>
+<script src="Asynchronous%20Client%20Socket%20Example_files/broker-config.js"></script><div id="_WEDCSInsertedData" style="display: none;"><iframe id="_msnFrame" src="Asynchronous%20Client%20Socket%20Example_files/c_002.gif" style="z-index:-1;height:1px;width:1px;display:none;visibility:hidden;" onload="javascript:MscomBeacon();"></iframe></div></body></html>

@@ -1,0 +1,10 @@
+﻿<UserControl x:Class="ias.client.Safety"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    >
+    <StackPanel Background="Yellow">
+        <TextBlock Margin="20" FontSize="120" FontWeight="bold" FontStyle="Italic" HorizontalAlignment="Center" VerticalAlignment="Top">SAFETY FIRST!</TextBlock>
+        <TextBlock Name="tbDays" FontSize="200" FontWeight="bold" HorizontalAlignment="Center" ></TextBlock>
+        <TextBlock FontSize="80" FontWeight="bold" HorizontalAlignment="Center" VerticalAlignment="Bottom"  >Days without lost time accident</TextBlock>
+    </StackPanel>
+</UserControl>

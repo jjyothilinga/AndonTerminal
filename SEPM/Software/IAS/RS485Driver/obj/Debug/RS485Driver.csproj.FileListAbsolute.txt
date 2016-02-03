@@ -1,0 +1,9 @@
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\RS485Driver\bin\Debug\ias.485Driver.dll
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\RS485Driver\bin\Debug\ias.485Driver.pdb
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\RS485Driver\obj\Debug\ResolveAssemblyReference.cache
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\RS485Driver\obj\Debug\ias.485Driver.dll
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\RS485Driver\obj\Debug\ias.485Driver.pdb
+F:\Repository\Schneider\SEPM\Software\IAS\RS485Driver\bin\Debug\ias.485Driver.dll
+F:\Repository\Schneider\SEPM\Software\IAS\RS485Driver\bin\Debug\ias.485Driver.pdb
+F:\Repository\Schneider\SEPM\Software\IAS\RS485Driver\obj\Debug\ias.485Driver.dll
+F:\Repository\Schneider\SEPM\Software\IAS\RS485Driver\obj\Debug\ias.485Driver.pdb

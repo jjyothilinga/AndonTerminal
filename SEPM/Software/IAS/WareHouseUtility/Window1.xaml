@@ -1,0 +1,134 @@
+﻿<Window x:Class="WareHouseUtility.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dg="http://schemas.microsoft.com/wpf/2008/toolkit"
+    xmlns:local="clr-namespace:WareHouseUtility"
+    Title="Intelligent Andon System" Background="Green" WindowState="Maximized" Closing="Window_Closing"
+         >
+    <Window.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="MinWidth" Value="300"/>
+            <Setter Property="FontSize" Value="20"/>
+
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="MinWidth" Value="300"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontSize" Value="20"/>
+
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="MinWidth" Value="100"/>
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="20"/>
+
+
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="FontSize" Value="30"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBox Grid.Row="0" Name="tbTitle" Margin="5" Text="Ideonics Andon System- Ware House Utility " HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalAlignment="Top" Background="Green"
+                 Foreground="White" BorderThickness="0" />
+        <local:Reports Grid.Row="1" />
+        
+        <!--<GroupBox Grid.Row="1" Name="gbRaise" Height="Auto">
+            <GroupBox.HeaderTemplate>
+                <DataTemplate>
+                    <TextBlock Foreground="White" Text="Raise" FontSize="10"/>
+                </DataTemplate>
+            </GroupBox.HeaderTemplate>
+            <Grid  Margin="5,5" Height="Auto">
+                <Grid.ColumnDefinitions >
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0"  Content=" PART No:" HorizontalContentAlignment="Left"   />
+                <TextBox Grid.Column="1" Name="tbPartNo"   
+                              IsReadOnly="False" 
+                              />
+                <Button Grid.Column="2" Name="btnRaise" Margin="10,0" Content="Raise" Click="btnRaise_Click"/>
+            </Grid>
+            
+        </GroupBox>
+        <GroupBox Name="gbResolve" Grid.Row="2" >
+            <GroupBox.HeaderTemplate>
+                <DataTemplate>
+                    <TextBlock Foreground="White" Text="Issue" FontSize="10"/>
+                </DataTemplate>
+                
+            </GroupBox.HeaderTemplate>
+            <Grid >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+
+                </Grid.ColumnDefinitions>
+         
+                <dg:DataGrid Grid.Column="0" Name="dgOpenIssuesGrid" AutoGenerateColumns="False" IsReadOnly="True"
+                CanUserAddRows="False" CanUserDeleteRows="False" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto"
+                ItemsSource="{Binding}" ScrollViewer.CanContentScroll="True" ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                ScrollViewer.VerticalScrollBarVisibility="Auto" Visibility="Visible" HorizontalAlignment="Left"
+                BorderThickness="0" CanUserSortColumns="False"  SelectionChanged="dgOpenIssuesGrid_SelectionChanged" Margin="0,0,23.58,0">
+                    <dg:DataGrid.Resources>
+                        <Style x:Name="H1" TargetType="{x:Type dg:DataGridColumnHeader}">
+                            <Setter Property="FontSize" Value="25"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                            <Setter Property="BorderThickness" Value="0"/>
+                            <Setter Property="Width" Value="Auto"/>
+                            
+                            
+                        </Style>
+
+                    </dg:DataGrid.Resources>
+                    <dg:DataGrid.Columns>
+                        <dg:DataGridTemplateColumn Header="Record ID"  IsReadOnly="True"  CanUserReorder="False" Visibility="Hidden"  >
+                            <dg:DataGridTemplateColumn.CellTemplate >
+                                <DataTemplate>
+                                    <TextBox Text="{Binding RecordID}" FontSize="25" FontWeight="bold"
+                                                            BorderThickness="0" HorizontalContentAlignment="Center"
+                                             HorizontalAlignment="Center"/>
+                                </DataTemplate>
+                            </dg:DataGridTemplateColumn.CellTemplate>
+                        </dg:DataGridTemplateColumn>
+                        <dg:DataGridTemplateColumn Header="Part No"  IsReadOnly="True"  CanUserReorder="False"  >
+                            <dg:DataGridTemplateColumn.CellTemplate >
+                                <DataTemplate>
+                                    <TextBox Text="{Binding PartNo}" FontSize="25" FontWeight="bold"
+                                                            BorderThickness="0" HorizontalContentAlignment="Center"
+                                             HorizontalAlignment="Center"/>
+                                </DataTemplate>
+                            </dg:DataGridTemplateColumn.CellTemplate>
+                        </dg:DataGridTemplateColumn>
+                        <dg:DataGridTemplateColumn Header="Status"  IsReadOnly="True"  CanUserReorder="False"  >
+                            <dg:DataGridTemplateColumn.CellTemplate >
+                                <DataTemplate>
+                                    <TextBox Text="{Binding Status}" FontSize="25" FontWeight="bold"
+                                                            BorderThickness="0" HorizontalContentAlignment="Center"
+                                             HorizontalAlignment="Center"/>
+                                </DataTemplate>
+                            </dg:DataGridTemplateColumn.CellTemplate>
+                        </dg:DataGridTemplateColumn>
+                    </dg:DataGrid.Columns>
+                </dg:DataGrid>
+                
+
+                 <Button Grid.Column="1" Name="btnClose" Content="Resolve" Margin="5" Click="btnClose_Click" 
+                         VerticalAlignment="Bottom"/>
+                    
+
+               
+
+            </Grid>
+        </GroupBox>-->
+    </Grid>
+</Window>

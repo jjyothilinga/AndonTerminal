@@ -1,0 +1,9 @@
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\Xbee\bin\Debug\ias.Xbee.dll
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\Xbee\bin\Debug\ias.Xbee.pdb
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\Xbee\obj\Debug\ResolveAssemblyReference.cache
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\Xbee\obj\Debug\ias.Xbee.dll
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\Xbee\obj\Debug\ias.Xbee.pdb
+F:\Repository\Schneider\SEPM\Software\IAS\Xbee\bin\Debug\ias.Xbee.dll
+F:\Repository\Schneider\SEPM\Software\IAS\Xbee\bin\Debug\ias.Xbee.pdb
+F:\Repository\Schneider\SEPM\Software\IAS\Xbee\obj\Debug\ias.Xbee.dll
+F:\Repository\Schneider\SEPM\Software\IAS\Xbee\obj\Debug\ias.Xbee.pdb

@@ -1,0 +1,30 @@
+﻿<Window x:Class="ias.client.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"   
+    xmlns:local="clr-namespace:ias.shared;assembly=ias.shared"
+    Title="Intelligent Andon System " WindowState="Maximized" WindowStartupLocation="CenterScreen"  
+         ResizeMode="CanMinimize" Closing="Window_Closing">
+    <Window.Resources>
+        <local:statusToBackgroundConv x:Key="statusConverter"></local:statusToBackgroundConv>
+    </Window.Resources>
+    <Grid Background="Green">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+                           
+        </Grid.RowDefinitions>
+    <Grid Grid.Row="0" Name="baseGrid">
+            <TabControl Name="tbMain"/>
+        </Grid>
+        <Grid Grid.Row="1" Background="Green" >
+            <Canvas Margin="5" Name="cMarquee" ClipToBounds="True" Height="70" Width="500" Background="Green"  >
+                <TextBox x:Name="tbMarquee" FontSize="50" Margin="5" 
+                                  BorderThickness="0" 
+                                 Background="Green"  Foreground="White">
+
+                </TextBox>
+            </Canvas>
+        </Grid>
+    </Grid>
+</Window>

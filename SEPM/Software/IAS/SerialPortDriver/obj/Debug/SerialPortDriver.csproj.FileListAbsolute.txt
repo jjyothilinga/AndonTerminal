@@ -1,0 +1,11 @@
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\SerialPortDriver\bin\Debug\ias.SerialPortDriver.dll.config
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\SerialPortDriver\bin\Debug\ias.SerialPortDriver.dll
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\SerialPortDriver\bin\Debug\ias.SerialPortDriver.pdb
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\SerialPortDriver\obj\Debug\ResolveAssemblyReference.cache
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\SerialPortDriver\obj\Debug\ias.SerialPortDriver.dll
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\SerialPortDriver\obj\Debug\ias.SerialPortDriver.pdb
+F:\Repository\Schneider\SEPM\Software\IAS\SerialPortDriver\bin\Debug\ias.SerialPortDriver.dll.config
+F:\Repository\Schneider\SEPM\Software\IAS\SerialPortDriver\bin\Debug\ias.SerialPortDriver.dll
+F:\Repository\Schneider\SEPM\Software\IAS\SerialPortDriver\bin\Debug\ias.SerialPortDriver.pdb
+F:\Repository\Schneider\SEPM\Software\IAS\SerialPortDriver\obj\Debug\ias.SerialPortDriver.dll
+F:\Repository\Schneider\SEPM\Software\IAS\SerialPortDriver\obj\Debug\ias.SerialPortDriver.pdb

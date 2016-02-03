@@ -1,0 +1,66 @@
+MPLINK 4.48, Linker
+Linker Error Map File - Created Mon Jan 04 13:45:02 2016
+
+*Warning* - This is only a partial map file due to a link time error.
+   Only sections which were allocated prior to the error are shown below.
+
+CODEPAGES:
+    Memory      Start        End              Section    Address Size(Bytes)
+ ---------  ---------  ---------            ---------  ---------  ---------
+   vectors     0x0000     0x0029           _entry_scn     0x0000     0x0006
+                                          high_vector     0x0008     0x0012
+
+      page     0x002a     0x7fff               .cinit     0x002a     0x007a
+                                          .code_ias.o     0x00a4     0x27ee
+                                           .code_UI.o     0x2892     0x15da
+                                   .code_lcd_driver.o     0x3e6c     0x0472
+                                 .code_communication.o     0x42de     0x0464
+                                  .code_uart_driver.o     0x4742     0x0354
+                                 .code_keypad_driver.o     0x4a96     0x020e
+                                 .code_timer_driver.o     0x4ca4     0x0190
+                                               STRING     0x4e34     0x0104
+
+    idlocs     0x0000     0x0007                                           
+
+    config     0x0000     0x000d .config_300001_main.o     0x0001     0x0001
+                                 .config_300002_main.o     0x0002     0x0001
+                                 .config_300003_main.o     0x0003     0x0001
+                                 .config_300005_main.o     0x0005     0x0001
+                                 .config_300006_main.o     0x0006     0x0001
+                                 .config_300008_main.o     0x0008     0x0001
+                                 .config_300009_main.o     0x0009     0x0001
+                                 .config_30000a_main.o     0x000a     0x0001
+                                 .config_30000b_main.o     0x000b     0x0001
+                                 .config_30000c_main.o     0x000c     0x0001
+                                 .config_30000d_main.o     0x000d     0x0001
+
+     devid     0xfffe     0xffff                                           
+
+    eedata     0x0000     0x00ff                                           
+
+
+SHAREBANKS:
+
+DATABANKS:
+    Memory      Start        End              Section    Address Size(Bytes)
+ ---------  ---------  ---------            ---------  ---------  ---------
+      gpr0     0x0080     0x00ff               .stack     0x0080     0x0080
+
+      gpr1     0x0100     0x03ff              logdata     0x0100     0x00ff
+                                              iasdata     0x01ff     0x01f1
+
+      gpr2     0x0400     0x04ff              ui_data     0x0400     0x0089
+                                          KEYPAD_DATA     0x0489     0x0012
+
+      gpr4     0x0500     0x05ff             com_data     0x0500     0x0078
+                                             uartdata     0x0578     0x006a
+
+
+ACCESSBANKS:
+    Memory      Start        End              Section    Address Size(Bytes)
+ ---------  ---------  ---------            ---------  ---------  ---------
+ accessram     0x0000     0x007f                                           
+
+ accesssfr     0x0f80     0x0fff        SFR_UNBANKED0     0x0f80     0x0080
+
+

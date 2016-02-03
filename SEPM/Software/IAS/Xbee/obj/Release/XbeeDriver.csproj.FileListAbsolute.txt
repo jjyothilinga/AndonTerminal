@@ -1,0 +1,10 @@
+E:\Projects\Schneider_Bengaluru\Software\Backup\IAS\Backup\Xbee\bin\Debug\ias.Xbee.dll
+E:\Projects\Schneider_Bengaluru\Software\Backup\IAS\Backup\Xbee\bin\Debug\ias.Xbee.pdb
+E:\Projects\Schneider_Bengaluru\Software\Backup\IAS\Backup\Xbee\obj\Release\ResolveAssemblyReference.cache
+E:\Projects\Schneider_Bengaluru\Software\Backup\IAS\Backup\Xbee\obj\Release\ias.Xbee.dll
+E:\Projects\Schneider_Bengaluru\Software\Backup\IAS\Backup\Xbee\obj\Release\ias.Xbee.pdb
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\Xbee\bin\Debug\ias.Xbee.dll
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\Xbee\bin\Debug\ias.Xbee.pdb
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\Xbee\obj\Release\ResolveAssemblyReference.cache
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\Xbee\obj\Release\ias.Xbee.dll
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\Xbee\obj\Release\ias.Xbee.pdb

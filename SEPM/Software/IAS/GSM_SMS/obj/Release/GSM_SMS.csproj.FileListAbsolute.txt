@@ -1,0 +1,14 @@
+E:\Projects\Schneider_Bengaluru\Software\Backup\IAS\Backup\GSM_SMS\bin\Debug\ias.GSM_SMS.dll
+E:\Projects\Schneider_Bengaluru\Software\Backup\IAS\Backup\GSM_SMS\bin\Debug\ias.GSM_SMS.pdb
+E:\Projects\Schneider_Bengaluru\Software\Backup\IAS\Backup\GSM_SMS\bin\Debug\ias.SerialPortDriver.dll
+E:\Projects\Schneider_Bengaluru\Software\Backup\IAS\Backup\GSM_SMS\bin\Debug\ias.SerialPortDriver.pdb
+E:\Projects\Schneider_Bengaluru\Software\Backup\IAS\Backup\GSM_SMS\obj\Release\ResolveAssemblyReference.cache
+E:\Projects\Schneider_Bengaluru\Software\Backup\IAS\Backup\GSM_SMS\obj\Release\ias.GSM_SMS.dll
+E:\Projects\Schneider_Bengaluru\Software\Backup\IAS\Backup\GSM_SMS\obj\Release\ias.GSM_SMS.pdb
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\GSM_SMS\bin\Debug\ias.GSM_SMS.dll
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\GSM_SMS\bin\Debug\ias.GSM_SMS.pdb
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\GSM_SMS\bin\Debug\ias.SerialPortDriver.dll
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\GSM_SMS\bin\Debug\ias.SerialPortDriver.pdb
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\GSM_SMS\obj\Release\ResolveAssemblyReference.cache
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\GSM_SMS\obj\Release\ias.GSM_SMS.dll
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\GSM_SMS\obj\Release\ias.GSM_SMS.pdb

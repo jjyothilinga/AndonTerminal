@@ -1,0 +1,15 @@
+E:\Projects\Schneider_Bengaluru\Software\Backup\IAS\Backup\shared\bin\Debug\ias.shared.dll
+E:\Projects\Schneider_Bengaluru\Software\Backup\IAS\Backup\shared\bin\Debug\ias.shared.pdb
+E:\Projects\Schneider_Bengaluru\Software\Backup\IAS\Backup\shared\obj\Release\ResolveAssemblyReference.cache
+E:\Projects\Schneider_Bengaluru\Software\Backup\IAS\Backup\shared\obj\Release\ias.shared.dll
+E:\Projects\Schneider_Bengaluru\Software\Backup\IAS\Backup\shared\obj\Release\ias.shared.pdb
+E:\Projects\Schneider_Bengaluru\Software\IAS\shared\bin\Debug\ias.shared.dll
+E:\Projects\Schneider_Bengaluru\Software\IAS\shared\bin\Debug\ias.shared.pdb
+E:\Projects\Schneider_Bengaluru\Software\IAS\shared\obj\Release\ResolveAssemblyReference.cache
+E:\Projects\Schneider_Bengaluru\Software\IAS\shared\obj\Release\ias.shared.dll
+E:\Projects\Schneider_Bengaluru\Software\IAS\shared\obj\Release\ias.shared.pdb
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\shared\bin\Debug\ias.shared.dll
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\shared\bin\Debug\ias.shared.pdb
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\shared\obj\Release\ResolveAssemblyReference.cache
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\shared\obj\Release\ias.shared.dll
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\shared\obj\Release\ias.shared.pdb

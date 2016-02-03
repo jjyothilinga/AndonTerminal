@@ -1,0 +1,54 @@
+﻿<Window x:Class="SupportGroupUtility.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:SupportGroupUtility"
+    Title="Ideonics Andon System - Support Group Utility" Background="Green" >
+
+    <Window.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="MinWidth" Value="300"/>
+            <Setter Property="FontSize" Value="20"/>
+        </Style>
+
+        <Style TargetType="Label">
+            <Setter Property="MinWidth" Value="100"/>
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="20"/>
+
+
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="FontSize" Value="30"/>
+        </Style>
+
+    </Window.Resources>
+    <Grid Name="baseGrid" Background="Green">
+    <StackPanel Background="Green">
+        <Label Content="Ideonics Andon System" FontSize="25" Foreground="White"
+               Background="Green" HorizontalAlignment="Center"/>
+        <Grid Name="IDGrid"  Margin="5,20" Height="Auto">
+            <Grid.ColumnDefinitions >
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0"  Content=" SESA ID:" HorizontalContentAlignment="Right"   />
+            <TextBox Grid.Column="1" Name="tbLineID"  MinWidth="250"
+                              IsReadOnly="False" 
+                              />
+        </Grid>
+        <Grid Name="PasswordGrid" Margin="5,20" Height="Auto">
+            <Grid.ColumnDefinitions >
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0"  Content=" Password:" HorizontalContentAlignment="Right"  />
+            <PasswordBox Grid.Column="1" Name="tbPassword"  MinWidth="250"
+                              />
+        </Grid>
+        <Button Grid.Row="1" Name="btnLogin" Content="Login" Margin="5" FontSize="25"
+                Click="btnLogin_Click" Width="Auto" HorizontalAlignment="Center"  VerticalAlignment="Top"/>
+
+    </StackPanel>
+   </Grid>
+</Window>

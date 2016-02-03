@@ -1,0 +1,5 @@
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\shared\bin\Debug\ias.shared.dll
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\shared\bin\Debug\ias.shared.pdb
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\shared\obj\Debug\ResolveAssemblyReference.cache
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\shared\obj\Debug\ias.shared.dll
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\shared\obj\Debug\ias.shared.pdb

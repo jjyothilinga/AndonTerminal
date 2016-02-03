@@ -1,0 +1,123 @@
+﻿<Window x:Class="PlanningUtility.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dg="http://schemas.microsoft.com/wpf/2008/toolkit"
+    Title="Andon Sytem - Planning Utility" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Text="Planning Utility" Background="Green" FontSize="30" Foreground="White" HorizontalAlignment="Stretch"
+                   TextAlignment="Center"/>
+        <Grid Background="Green" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            
+            <Grid Grid.Row="0" Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions >
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0"  Content="Plan Date:"   HorizontalContentAlignment="Left" FontSize="20" Foreground="White" />
+                <dg:DatePicker Grid.Column="1" Name="PlanDate"  FontSize="20" Margin="5,0,5,0" VerticalAlignment="Center"/>
+            </Grid>
+                <Grid Grid.Row="1" Name="DeviceIdGrid"  Height="Auto" Margin="5">
+                    
+                    <Grid.ColumnDefinitions >
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                
+                <Label Grid.Column="0"  Content=" ProductionLine:" HorizontalContentAlignment="Left" FontSize="20" Foreground="White" />
+                    <ComboBox Grid.Column="1" Name="cmbProductionLineSelector"  SelectedIndex="-1" Text="Select Production Line" 
+                              IsEditable="True" IsReadOnly="True" ItemsSource="{Binding}" DisplayMemberPath="description" VerticalAlignment="Center"
+                              SelectionChanged="cmbProductionLineSelector_SelectionChanged"  FontSize="20"/>
+                <Label Grid.Column="2"  Content=" Reference:" HorizontalContentAlignment="Left" FontSize="20" Foreground="White" />
+                <ComboBox Grid.Column="3" Name="ReferenceSelector"  SelectedIndex="-1" Text="Select Reference" 
+                              IsEditable="True" IsReadOnly="True" ItemsSource="{Binding}" DisplayMemberPath="ReferenceNo"
+                               FontSize="20" VerticalAlignment="Center" IsSynchronizedWithCurrentItem="True"/>
+
+                <!--<Label Grid.Column="4"  Content="Description:" HorizontalContentAlignment="Left" FontSize="20" Foreground="White" />
+                <Label Grid.Column="5" Name="DescriptionLabel"  Content="{Binding Path=Description}" Foreground="White"
+                                FontSize="20"/>-->
+            </Grid>
+
+                <Grid Margin="5" Visibility="Visible" Height="Auto" Grid.Row="2">
+                    <Grid.ColumnDefinitions >
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <dg:DataGrid AutoGenerateColumns="False"  Name="shiftConfigTable" Grid.Column="0"
+                                 ItemsSource="{Binding}" HorizontalAlignment="Left" 
+                                 SelectionMode="Single" SelectionUnit="Cell"  >
+                        <dg:DataGrid.Resources>
+                            <Style x:Name="Header_Style1" TargetType="{x:Type dg:DataGridColumnHeader}" >
+                                <Setter Property="FontSize" Value="15"/>
+                                <Setter Property="FontWeight" Value="Bold"/>
+                                <Setter Property="HorizontalAlignment" Value="Center"/>
+                                <Setter Property="BorderThickness" Value="0"/>
+                            <Setter Property="Margin" Value="5,0,5,0"/>
+                        </Style>
+                        </dg:DataGrid.Resources>
+                        <dg:DataGrid.Columns>
+                            <dg:DataGridTemplateColumn Header="Shift"  IsReadOnly="True"  CanUserReorder="False"  >
+                                <dg:DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock  Text="{Binding Shift}" FontSize="15" />
+                                    </DataTemplate>
+                                </dg:DataGridTemplateColumn.CellTemplate>
+                            </dg:DataGridTemplateColumn>
+                            <dg:DataGridTemplateColumn Header="Planned Qty"   >
+                                <dg:DataGridTemplateColumn.CellTemplate  >
+                                    <DataTemplate >
+                                        <TextBox MaxLines="1" MaxLength="8" 
+                                                     Text="{Binding PlannedQuantity}" 
+                                                     FontSize="20"/>
+                                    </DataTemplate>
+                                </dg:DataGridTemplateColumn.CellTemplate>
+                            </dg:DataGridTemplateColumn>
+                        <dg:DataGridTemplateColumn Header="Planned Manpower"   >
+                            <dg:DataGridTemplateColumn.CellTemplate  >
+                                <DataTemplate >
+                                    <TextBox MaxLines="1" MaxLength="8" 
+                                                     Text="{Binding PlannedManpower}" 
+                                                     FontSize="20"/>
+                                </DataTemplate>
+                            </dg:DataGridTemplateColumn.CellTemplate>
+                        </dg:DataGridTemplateColumn>
+                        <dg:DataGridTemplateColumn Header="Maximum Manpower"   >
+                            <dg:DataGridTemplateColumn.CellTemplate  >
+                                <DataTemplate >
+                                    <TextBox MaxLines="1" MaxLength="8" 
+                                                     Text="{Binding MaximumManpower}" 
+                                                     FontSize="20"/>
+                                </DataTemplate>
+                            </dg:DataGridTemplateColumn.CellTemplate>
+                        </dg:DataGridTemplateColumn>
+                    </dg:DataGrid.Columns>
+                    </dg:DataGrid>
+                    <Button  Grid.Column="2" Name="btnSet" Margin="5" VerticalAlignment="Bottom" 
+                                 MinWidth="50" HorizontalAlignment="Center" Content="Update" 
+                                 Click="btnSet_Click"  Height="Auto" FontSize="20" />
+                </Grid>
+
+            </Grid>
+
+        
+
+    </Grid>
+</Window>

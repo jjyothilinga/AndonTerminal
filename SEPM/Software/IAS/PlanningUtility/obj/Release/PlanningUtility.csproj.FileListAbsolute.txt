@@ -1,0 +1,15 @@
+E:\Projects\Schneider_Bengaluru\Software\IAS\PlanningUtility\obj\Release\ResolveAssemblyReference.cache
+E:\Projects\Schneider_Bengaluru\Software\IAS\PlanningUtility\obj\Release\Window1.baml
+E:\Projects\Schneider_Bengaluru\Software\IAS\PlanningUtility\obj\Release\Window1.g.cs
+E:\Projects\Schneider_Bengaluru\Software\IAS\PlanningUtility\obj\Release\App.g.cs
+E:\Projects\Schneider_Bengaluru\Software\IAS\PlanningUtility\obj\Release\PlanningUtility_MarkupCompile.cache
+E:\Projects\Schneider_Bengaluru\Software\IAS\PlanningUtility\obj\Release\PlanningUtility.g.resources
+E:\Projects\Schneider_Bengaluru\Software\IAS\PlanningUtility\obj\Release\PlanningUtility.Properties.Resources.resources
+E:\Projects\Schneider_Bengaluru\Software\IAS\PlanningUtility\obj\Release\PlanningUtility.csproj.GenerateResource.Cache
+E:\Projects\Schneider_Bengaluru\Software\IAS\PlanningUtility\bin\Release\PlanningUtility.exe.config
+E:\Projects\Schneider_Bengaluru\Software\IAS\PlanningUtility\bin\Release\PlanningUtility.exe
+E:\Projects\Schneider_Bengaluru\Software\IAS\PlanningUtility\bin\Release\PlanningUtility.pdb
+E:\Projects\Schneider_Bengaluru\Software\IAS\PlanningUtility\bin\Release\WPFToolkit.dll
+E:\Projects\Schneider_Bengaluru\Software\IAS\PlanningUtility\bin\Release\WPFToolkit.pdb
+E:\Projects\Schneider_Bengaluru\Software\IAS\PlanningUtility\obj\Release\PlanningUtility.exe
+E:\Projects\Schneider_Bengaluru\Software\IAS\PlanningUtility\obj\Release\PlanningUtility.pdb

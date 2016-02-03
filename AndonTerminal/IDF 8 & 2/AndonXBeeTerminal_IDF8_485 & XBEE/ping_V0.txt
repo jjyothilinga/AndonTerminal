@@ -1,0 +1,15 @@
+wait 1 sec
+aa 01 01 80 80 bb
+wait 1 sec
+aa 01 01 80 80 bb
+wait 1 sec
+aa 01 01 80 80 bb
+wait 1 sec
+aa 01 01 80 80 bb
+wait 1 sec
+aa 01 01 80 80 bb
+wait 1 sec
+aa 01 01 80 80 bb
+wait 1 sec
+aa 01 01 80 80 bb
+

@@ -1,0 +1,4 @@
+wait 1 sec
+AA 63 01 A0 C2 BB
+wait 1 sec
+AA 63 01 A1 C3 BB

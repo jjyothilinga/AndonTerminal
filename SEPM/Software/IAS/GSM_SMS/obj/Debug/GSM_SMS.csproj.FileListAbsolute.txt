@@ -1,0 +1,14 @@
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\GSM_SMS\bin\Debug\ias.GSM_SMS.dll
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\GSM_SMS\bin\Debug\ias.GSM_SMS.pdb
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\GSM_SMS\bin\Debug\ias.SerialPortDriver.dll
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\GSM_SMS\bin\Debug\ias.SerialPortDriver.pdb
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\GSM_SMS\obj\Debug\ResolveAssemblyReference.cache
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\GSM_SMS\obj\Debug\ias.GSM_SMS.dll
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\GSM_SMS\obj\Debug\ias.GSM_SMS.pdb
+F:\Repository\Schneider\SEPM\Software\IAS\GSM_SMS\bin\Debug\ias.GSM_SMS.dll
+F:\Repository\Schneider\SEPM\Software\IAS\GSM_SMS\bin\Debug\ias.GSM_SMS.pdb
+F:\Repository\Schneider\SEPM\Software\IAS\GSM_SMS\bin\Debug\ias.SerialPortDriver.dll
+F:\Repository\Schneider\SEPM\Software\IAS\GSM_SMS\bin\Debug\ias.SerialPortDriver.pdb
+F:\Repository\Schneider\SEPM\Software\IAS\GSM_SMS\obj\Debug\GSM_SMS.csprojResolveAssemblyReference.cache
+F:\Repository\Schneider\SEPM\Software\IAS\GSM_SMS\obj\Debug\ias.GSM_SMS.dll
+F:\Repository\Schneider\SEPM\Software\IAS\GSM_SMS\obj\Debug\ias.GSM_SMS.pdb

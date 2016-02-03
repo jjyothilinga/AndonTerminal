@@ -1,0 +1,14 @@
+E:\Projects\Schneider_Bengaluru\Software\IAS\shared\bin\Debug\ias.shared.dll
+E:\Projects\Schneider_Bengaluru\Software\IAS\shared\bin\Debug\ias.shared.pdb
+E:\Projects\Schneider_Bengaluru\Software\IAS\shared\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\Schneider_Bengaluru\Software\IAS\shared\obj\Debug\ias.shared.dll
+E:\Projects\Schneider_Bengaluru\Software\IAS\shared\obj\Debug\ias.shared.pdb
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\shared\bin\Debug\ias.shared.dll
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\shared\bin\Debug\ias.shared.pdb
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\shared\obj\Debug\ResolveAssemblyReference.cache
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\shared\obj\Debug\ias.shared.dll
+D:\Ideonics\Schneider_Bengaluru\Software\IAS\shared\obj\Debug\ias.shared.pdb
+F:\Repository\Schneider\SEPM\Software\IAS\shared\bin\Debug\ias.shared.dll
+F:\Repository\Schneider\SEPM\Software\IAS\shared\bin\Debug\ias.shared.pdb
+F:\Repository\Schneider\SEPM\Software\IAS\shared\obj\Debug\ias.shared.dll
+F:\Repository\Schneider\SEPM\Software\IAS\shared\obj\Debug\ias.shared.pdb

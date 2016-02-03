@@ -1,0 +1,8 @@
+wait 8 sec
+  AA  FA  01  80  7B  BB
+
+wait 1 sec
+  AA  FA  04  A2  30 31 31  6C  BB
+
+
+
